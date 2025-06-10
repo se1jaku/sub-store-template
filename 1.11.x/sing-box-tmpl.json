@@ -670,7 +670,6 @@
     {
       "type": "selector",
       "tag": "🚩 Proxy",
-      "meta": "@all",
       "outbounds": [
         "🇭🇰 香港【自动】",
         "🇭🇰 香港",
@@ -693,7 +692,6 @@
     {
       "type": "selector",
       "tag": "🏁 默认出口",
-      "meta": "@direct+@all",
       "outbounds": [
         "direct",
         "🇭🇰 香港【自动】",
@@ -725,7 +723,6 @@
     {
       "type": "selector",
       "tag": "Telegram",
-      "meta": "@dgw",
       "outbounds": [
         "🇭🇰 香港【自动】",
         "🇭🇰 香港",
@@ -830,7 +827,6 @@
     {
       "type": "selector",
       "tag": "Google",
-      "meta": "@dgw",
       "outbounds": [
         "🇭🇰 香港【自动】",
         "🇭🇰 香港",
@@ -847,7 +843,6 @@
     {
       "type": "selector",
       "tag": "Apple & Microsoft",
-      "meta": "@dgw",
       "outbounds": [
         "🇭🇰 香港【自动】",
         "🇭🇰 香港",
@@ -864,7 +859,6 @@
     {
       "type": "selector",
       "tag": "NTP & Remote Control",
-      "meta": "@dgw",
       "outbounds": [
         "🇭🇰 香港【自动】",
         "🇭🇰 香港"
