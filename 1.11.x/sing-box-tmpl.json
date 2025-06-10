@@ -353,280 +353,280 @@
         "tag": "geoip-cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geoip-google",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geoip-netflix",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-netflix.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geoip-telegram",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-apple",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-apple.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-bahamut",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-bahamut.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-catchplay",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-catchplay.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-cryptocurrency",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-cryptocurrency.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-dev",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-dev.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ecommerce",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ecommerce.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-finance",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-finance.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-forums",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-forums.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-game-accelerator-cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-game-accelerator-cn.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-games@cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-games@cn.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-media",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-media.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ntp",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ntp.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-remote-control",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-remote-control.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-category-social-media-!cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-social-media-!cn.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-disney",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-disney.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-geolocation-!cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-geolocation-!cn.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-geolocation-cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-geolocation-cn.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-google",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-hamivideo",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hamivideo.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-hbo",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hbo.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-imgur",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-imgur.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-kktv",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-kktv.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-line",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-line.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-litv",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-litv.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-microsoft",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-netflix",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-netflix.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-primevideo",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-primevideo.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-private",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-private.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-speedtest",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-speedtest.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-telegram",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-tiktok",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-tld-cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tld-cn.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-tvb",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tvb.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "geosite-whatsapp",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-whatsapp.srs",
-        "download_detour": "配置更新专用"
+        "download_detour": "🏴‍☠️ 配置更新专用"
       }
     ]
   },
@@ -638,7 +638,7 @@
     "clash_api": {
       "external_controller": "0.0.0.0:9090",
       "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "配置更新专用"
+      "external_ui_download_detour": "🏴‍☠️ 配置更新专用"
     }
   },
   "inbounds": [
