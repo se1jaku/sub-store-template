@@ -133,6 +133,10 @@
         "action": "hijack-dns"
       },
       {
+        "inbound": "dns-in",
+        "action": "hijack-dns"
+      },
+      {
         "inbound": "tun-in",
         "action": "resolve"
       },
@@ -643,6 +647,12 @@
   },
   "inbounds": [
     {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "::",
+      "listen_port": 53
+    },
+    {
       "type": "tun",
       "tag": "tun-in",
       "address": [
@@ -658,8 +668,11 @@
         "192.168.0.0/16",
         "fc00::/7"
       ],
+      "mtu": 1500,
       "auto_route": true,
-      "strict_route": true
+      "auto_redirect": false,
+      "strict_route": true,
+      "stack": "system"
     }
   ],
   "outbounds": [
