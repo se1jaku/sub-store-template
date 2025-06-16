@@ -761,8 +761,8 @@
       "type": "selector",
       "tag": "Speedtest",
       "outbounds": [
-        "direct",
-        "🚩 Proxy"
+        "🚩 Proxy",
+        "direct"
       ]
     },
     {
