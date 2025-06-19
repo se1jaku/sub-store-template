@@ -1,0 +1,11 @@
+{
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                ".steamserver.net"
+            ],
+            "domain_regex": []
+        }
+    ]
+}

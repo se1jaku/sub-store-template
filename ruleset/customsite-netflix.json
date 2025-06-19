@@ -1,0 +1,16 @@
+{
+    "rules": [
+        {
+            "domain": [
+                "appboot.netflix.com"
+            ],
+            "domain_suffix": [
+                ".ios-appboot.netflix.com",
+                ".android-appboot.netflix.com",
+                ".appboot.netflix.com",
+                ".prod.cloud.netflix.com"
+            ],
+            "domain_regex": []
+        }
+    ]
+}
