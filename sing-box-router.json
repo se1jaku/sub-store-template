@@ -626,14 +626,14 @@
       {
         "type": "remote",
         "tag": "customsite-direct",
-        "format": "json",
+        "format": "source",
         "url": "https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-direct.json",
         "download_detour": "🏳️ 配置更新专用"
       },
       {
         "type": "remote",
         "tag": "customsite-netflix",
-        "format": "json",
+        "format": "source",
         "url": "https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-netflix.json",
         "download_detour": "🏳️ 配置更新专用"
       }
