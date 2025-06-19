@@ -1,0 +1,528 @@
+{
+  "log": {
+    "level": "warn",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_resolver",
+        "address": "1.1.1.1",
+        "detour": "direct"
+      },
+      {
+        "tag": "server_resolver",
+        "address": "https://dns.alidns.com/dns-query",
+        "address_resolver": "dns_resolver",
+        "detour": "direct"
+      },
+      {
+        "tag": "local",
+        "address": "https://dns.alidns.com/dns-query",
+        "address_resolver": "dns_resolver",
+        "detour": "direct"
+      },
+      {
+        "tag": "proxy",
+        "address": "https://one.one.one.one/dns-query",
+        "address_resolver": "server_resolver",
+        "detour": "🚩 Proxy"
+      },
+      {
+        "tag": "Netflix",
+        "address": "https://one.one.one.one/dns-query",
+        "address_resolver": "server_resolver",
+        "detour": "Netflix"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "action": "route",
+        "server": "server_resolver"
+      },
+      {
+        "clash_mode": "direct",
+        "action": "route",
+        "server": "local"
+      },
+      {
+        "clash_mode": "global",
+        "action": "route",
+        "server": "proxy"
+      },
+      {
+        "rule_set": [
+          "geosite-tld-cn",
+          "geosite-private",
+          "geosite-geolocation-cn",
+          "geosite-category-games@cn",
+          "geosite-category-game-accelerator-cn"
+        ],
+        "action": "route",
+        "server": "local"
+      },
+      {
+        "domain_suffix": [
+          "steamserver.net"
+        ],
+        "action": "route",
+        "server": "local"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-geolocation-!cn",
+            "invert": true
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
+        ],
+        "action": "route",
+        "server": "proxy",
+        "client_subnet": "114.114.114.114/24"
+      },
+      {
+        "domain_suffix": [
+          "ios-appboot.netflix.com",
+          "android-appboot.netflix.com",
+          "appboot.netflix.com",
+          "prod.cloud.netflix.com"
+        ],
+        "action": "route",
+        "server": "Netflix"
+      }
+    ],
+    "final": "proxy",
+    "strategy": "prefer_ipv4",
+    "independent_cache": true
+  },
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "protocol": "dns"
+          },
+          {
+            "port": 53
+          }
+        ],
+        "action": "hijack-dns"
+      },
+      {
+        "inbound": "tun-in",
+        "action": "resolve"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "ip_cidr": [
+              "7.0.0.0/8",
+              "11.0.0.0/8",
+              "30.0.0.0/8"
+            ]
+          }
+        ],
+        "action": "route",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "direct",
+        "action": "route",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "global",
+        "action": "route",
+        "outbound": "🏁 默认出口"
+      },
+      {
+        "protocol": [
+          "stun",
+          "ssh",
+          "rdp"
+        ],
+        "action": "route",
+        "outbound": "🏁 默认出口"
+      },
+      {
+        "domain_suffix": [
+          "ios-appboot.netflix.com",
+          "android-appboot.netflix.com",
+          "appboot.netflix.com",
+          "prod.cloud.netflix.com"
+        ],
+        "action": "route",
+        "outbound": "Netflix"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "action": "route",
+        "outbound": "AI"
+      },
+      {
+        "rule_set": [
+          "geosite-category-cryptocurrency"
+        ],
+        "action": "route",
+        "outbound": "Crypto"
+      },
+      {
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "action": "route",
+        "outbound": "Tiktok"
+      },
+      {
+        "rule_set": [
+          "geosite-spotify"
+        ],
+        "action": "route",
+        "outbound": "Spotify"
+      },
+      {
+        "rule_set": [
+          "geoip-netflix",
+          "geosite-netflix"
+        ],
+        "action": "route",
+        "outbound": "Netflix"
+      },
+      {
+        "rule_set": [
+          "geosite-disney"
+        ],
+        "action": "route",
+        "outbound": "Disney+"
+      },
+      {
+        "rule_set": [
+          "geosite-hbo",
+          "geosite-primevideo"
+        ],
+        "action": "route",
+        "outbound": "Global Streaming"
+      },
+      {
+        "rule_set": [
+          "geosite-tvb",
+          "geosite-kktv",
+          "geosite-litv",
+          "geosite-hamivideo",
+          "geosite-catchplay",
+          "geosite-bahamut"
+        ],
+        "action": "route",
+        "outbound": "Taiwan Streaming"
+      },
+      {
+        "rule_set": [
+          "geosite-geolocation-!cn"
+        ],
+        "action": "route",
+        "outbound": "🚩 Proxy"
+      }
+    ],
+    "final": "🏁 默认出口",
+    "auto_detect_interface": true,
+    "rule_set": []
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db"
+    },
+    "clash_api": {
+      "external_controller": "0.0.0.0:9090",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+    }
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "address": [
+        "172.21.251.1/30",
+        "fdaa:172:21:251::1/126"
+      ],
+      "route_exclude_address": [
+        "7.0.0.0/8",
+        "10.0.0.0/8",
+        "11.0.0.0/8",
+        "30.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16",
+        "fc00::/7"
+      ],
+      "auto_route": true,
+      "strict_route": true
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "selector",
+      "tag": "🚩 Proxy",
+      "outbounds": [
+        "direct",
+        "🇭🇰 香港【自动】",
+        "🇭🇰 香港",
+        "🇼🇸 台湾【自动】",
+        "🇼🇸 台湾",
+        "🇸🇬 新加坡【自动】",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本【自动】",
+        "🇯🇵 日本",
+        "🇺🇸 美国【自动】",
+        "🇺🇸 美国",
+        "🇳🇱 荷兰【自动】",
+        "🇳🇱 荷兰"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🏁 默认出口",
+      "outbounds": [
+        "direct",
+        "🇭🇰 香港【自动】",
+        "🇭🇰 香港",
+        "🇼🇸 台湾【自动】",
+        "🇼🇸 台湾",
+        "🇸🇬 新加坡【自动】",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本【自动】",
+        "🇯🇵 日本",
+        "🇺🇸 美国【自动】",
+        "🇺🇸 美国",
+        "🇳🇱 荷兰【自动】",
+        "🇳🇱 荷兰"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "AI",
+      "outbounds": [
+        "🇼🇸 台湾【自动】",
+        "🇼🇸 台湾",
+        "🇸🇬 新加坡【自动】",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本【自动】",
+        "🇯🇵 日本",
+        "🇺🇸 美国【自动】",
+        "🇺🇸 美国"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Crypto",
+      "outbounds": [
+        "🇯🇵 日本【自动】",
+        "🇯🇵 日本",
+        "🇺🇸 美国【自动】",
+        "🇺🇸 美国"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Tiktok",
+      "outbounds": [
+        "🇭🇰 香港【自动】",
+        "🇭🇰 香港",
+        "🇼🇸 台湾【自动】",
+        "🇼🇸 台湾",
+        "🇸🇬 新加坡【自动】",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本【自动】",
+        "🇯🇵 日本",
+        "🇺🇸 美国【自动】",
+        "🇺🇸 美国",
+        "🇳🇱 荷兰【自动】",
+        "🇳🇱 荷兰"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Spotify",
+      "outbounds": [
+        "🇭🇰 香港【自动】",
+        "🇭🇰 香港",
+        "🇼🇸 台湾【自动】",
+        "🇼🇸 台湾",
+        "🇸🇬 新加坡【自动】",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本【自动】",
+        "🇯🇵 日本",
+        "🇺🇸 美国【自动】",
+        "🇺🇸 美国",
+        "🇳🇱 荷兰【自动】",
+        "🇳🇱 荷兰"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Netflix",
+      "outbounds": [
+        "🇭🇰 香港【自动】",
+        "🇭🇰 香港",
+        "🇼🇸 台湾【自动】",
+        "🇼🇸 台湾",
+        "🇸🇬 新加坡【自动】",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本【自动】",
+        "🇯🇵 日本",
+        "🇺🇸 美国【自动】",
+        "🇺🇸 美国",
+        "🇳🇱 荷兰【自动】",
+        "🇳🇱 荷兰"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Disney+",
+      "outbounds": [
+        "🇭🇰 香港【自动】",
+        "🇭🇰 香港",
+        "🇼🇸 台湾【自动】",
+        "🇼🇸 台湾",
+        "🇸🇬 新加坡【自动】",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本【自动】",
+        "🇯🇵 日本",
+        "🇺🇸 美国【自动】",
+        "🇺🇸 美国",
+        "🇳🇱 荷兰【自动】",
+        "🇳🇱 荷兰"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Global Streaming",
+      "outbounds": [
+        "🇭🇰 香港【自动】",
+        "🇭🇰 香港",
+        "🇼🇸 台湾【自动】",
+        "🇼🇸 台湾",
+        "🇸🇬 新加坡【自动】",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本【自动】",
+        "🇯🇵 日本",
+        "🇺🇸 美国【自动】",
+        "🇺🇸 美国",
+        "🇳🇱 荷兰【自动】",
+        "🇳🇱 荷兰"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Taiwan Streaming",
+      "outbounds": [
+        "🇼🇸 台湾【自动】",
+        "🇼🇸 台湾"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "🇭🇰 香港【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇼🇸 台湾【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇸🇬 新加坡【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇯🇵 日本【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇺🇸 美国【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇳🇱 荷兰【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "type": "selector",
+      "tag": "🇭🇰 香港",
+      "outbounds": []
+    },
+    {
+      "type": "selector",
+      "tag": "🇼🇸 台湾",
+      "outbounds": []
+    },
+    {
+      "type": "selector",
+      "tag": "🇸🇬 新加坡",
+      "outbounds": []
+    },
+    {
+      "type": "selector",
+      "tag": "🇯🇵 日本",
+      "outbounds": []
+    },
+    {
+      "type": "selector",
+      "tag": "🇺🇸 美国",
+      "outbounds": []
+    },
+    {
+      "type": "selector",
+      "tag": "🇳🇱 荷兰",
+      "outbounds": []
+    }
+  ]
+}
