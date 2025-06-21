@@ -18,8 +18,7 @@
       },
       {
         "tag": "local",
-        "address": "https://dns.alidns.com/dns-query",
-        "address_resolver": "dns_resolver",
+        "address": "172.21.21.1",
         "detour": "direct"
       },
       {
