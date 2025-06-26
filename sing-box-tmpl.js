@@ -1,7 +1,8 @@
 const { type, name } = $arguments
 const compatible_outbound = {
-  tag: 'COMPATIBLE',
-  type: 'direct',
+  type: 'selector',
+  tag: '🔄 COMPATIBLE',
+  outbounds: ['🔀 BDGW'],
 }
 
 let compatible
