@@ -18,7 +18,7 @@ config.outbounds.push(...proxies)
 
 config.outbounds.map(i => {
   if (['🇭🇰 香港', '🇭🇰 香港【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(rfc|jinx|ctc|dmit|bage|enos|misaka)/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(rfc|jinx|ctc|dmit|bage|enos|misaka|sharon)/i))
   }
   if (['🇭🇰 香港-HKT', '🇭🇰 香港-HKT【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(hkt)/i))
@@ -30,10 +30,10 @@ config.outbounds.map(i => {
     i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-(hinet)/i))
   }
   if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-(rfc|dmit|enos|misaka)/i))
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-(rfc|dmit|enos|misaka|sharon)/i))
   }
   if (['🇯🇵 日本', '🇯🇵 日本【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-(rfc|dmit|enos|misaka)/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-(rfc|dmit|enos|misaka|sharon)/i))
   }
   if (['🇺🇸 美国', '🇺🇸 美国【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-(rfc|dmit|enos|misaka)/i))
