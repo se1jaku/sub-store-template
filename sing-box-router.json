@@ -57,6 +57,13 @@
         "server": "proxy"
       },
       {
+        "query_type": [
+          "HTTPS"
+        ],
+        "action": "predefined",
+        "rcode": "NOERROR"
+      },
+      {
         "rule_set": [
           "geosite-tld-cn",
           "geosite-private",
@@ -68,8 +75,8 @@
         "server": "local"
       },
       {
-        "domain_suffix": [
-          "steamserver.net"
+        "rule_set": [
+          "customsite-direct"
         ],
         "action": "route",
         "server": "local"
@@ -99,11 +106,8 @@
         "disable_cache": true
       },
       {
-        "domain_suffix": [
-          "ios-appboot.netflix.com",
-          "android-appboot.netflix.com",
-          "appboot.netflix.com",
-          "prod.cloud.netflix.com"
+        "rule_set": [
+          "customsite-netflix"
         ],
         "action": "route",
         "server": "Netflix"
