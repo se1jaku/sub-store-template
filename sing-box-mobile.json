@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": "warn",
+    "level": "debug",
     "timestamp": true
   },
   "dns": {
@@ -117,6 +117,7 @@
   "route": {
     "rules": [
       {
+        "inbound": "tun-in",
         "action": "sniff"
       },
       {
@@ -666,8 +667,7 @@
         "fc00::/7"
       ],
       "auto_route": true,
-      "strict_route": true,
-      "stack": "gvisor"
+      "strict_route": true
     }
   ],
   "outbounds": [
