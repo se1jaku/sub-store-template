@@ -666,7 +666,8 @@
         "fc00::/7"
       ],
       "auto_route": true,
-      "strict_route": true
+      "strict_route": true,
+      "stack": "gvisor"
     }
   ],
   "outbounds": [
