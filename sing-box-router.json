@@ -57,13 +57,6 @@
         "server": "proxy"
       },
       {
-        "query_type": [
-          "HTTPS"
-        ],
-        "action": "predefined",
-        "rcode": "NOERROR"
-      },
-      {
         "rule_set": [
           "geosite-tld-cn",
           "geosite-private",
