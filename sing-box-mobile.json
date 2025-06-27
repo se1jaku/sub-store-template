@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": "debug",
+    "level": "warn",
     "timestamp": true
   },
   "dns": {
@@ -117,7 +117,6 @@
   "route": {
     "rules": [
       {
-        "inbound": "tun-in",
         "action": "sniff"
       },
       {
