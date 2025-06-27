@@ -12,13 +12,13 @@
       },
       {
         "tag": "server_resolver",
-        "address": "https://dns.alidns.com/dns-query",
+        "address": "https://doh.pub/dns-query",
         "address_resolver": "dns_resolver",
         "detour": "direct"
       },
       {
         "tag": "local",
-        "address": "https://dns.alidns.com/dns-query",
+        "address": "https://doh.pub/dns-query",
         "address_resolver": "dns_resolver",
         "detour": "direct"
       },
@@ -32,7 +32,7 @@
         "tag": "Speedtest",
         "address": "https://one.one.one.one/dns-query",
         "address_resolver": "server_resolver",
-        "detour": "Speedtest"
+        "detour": "🚀 Speedtest"
       },
       {
         "tag": "Netflix",
@@ -656,6 +656,7 @@
         "fdaa:172:21:251::1/126"
       ],
       "route_exclude_address": [
+        "127.0.0.0/8",
         "7.0.0.0/8",
         "10.0.0.0/8",
         "11.0.0.0/8",
