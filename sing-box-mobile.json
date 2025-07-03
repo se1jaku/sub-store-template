@@ -18,8 +18,7 @@
       },
       {
         "tag": "local",
-        "address": "https://doh.pub/dns-query",
-        "address_resolver": "dns_resolver",
+        "address": "119.29.29.29",
         "detour": "direct"
       },
       {
