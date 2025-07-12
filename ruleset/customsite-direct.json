@@ -4,7 +4,8 @@
         {
             "domain": [],
             "domain_suffix": [
-                ".steamserver.net"
+                ".steamserver.net",
+                ".lala.gg"
             ],
             "domain_regex": []
         }
