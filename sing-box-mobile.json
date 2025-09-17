@@ -1195,6 +1195,15 @@
       "outbounds": []
     },
     {
+      "type": "urltest",
+      "tag": "🇺🇳 全球家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
       "type": "selector",
       "tag": "🇭🇰 香港",
       "outbounds": []

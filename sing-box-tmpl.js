@@ -68,7 +68,7 @@ config.outbounds.map(i => {
   }
 
   // home boardband
-  if (['🇺🇳 全球家宽'].includes(i.tag)) {
+  if (['🇺🇳 全球家宽', '🇺🇳 全球家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-(aio)-/i))
   }
   if (['🇺🇸 美国家宽'].includes(i.tag)) {
