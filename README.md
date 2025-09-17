@@ -1,1 +1,1 @@
-# sub-store-template
+# My sub-store template
