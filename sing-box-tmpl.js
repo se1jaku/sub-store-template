@@ -66,6 +66,44 @@ config.outbounds.map(i => {
   if (['🇳🇱 荷兰DCMA', '🇳🇱 荷兰DCMA【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-(orig|dcma)/i))
   }
+
+  // home boardband
+  if (['🇺🇳 全球家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-(aio)-/i))
+  }
+  if (['🇺🇸 美国家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-(aio)-/i))
+  }
+  if (['🇨🇦 加拿大家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇨🇦\s+(加拿大|ca)-(aio)-/i))
+  }
+  if (['🇷🇺 俄罗斯家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-(aio)-/i))
+  }
+  if (['🇲🇾 马来西亚家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇲🇾\s+(马来西亚|my)-(aio)-/i))
+  }
+  if (['🇮🇩 印度尼西亚家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇮🇩\s+(印度尼西亚|id)-(aio)-/i))
+  }
+  if (['🇸🇬 新加坡家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-(aio)-/i))
+  }
+  if (['🇹🇭 泰国家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇹🇭\s+(泰国|th)-(aio)-/i))
+  }
+  if (['🇯🇵 日本家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-(aio)-/i))
+  }
+  if (['🇭🇰 香港家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(aio)-/i))
+  }
+  if (['🇲🇴 澳门家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇲🇴\s+(澳门|mo)-(aio)-/i))
+  }
+  if (['🇼🇸 台湾家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-(aio)-/i))
+  }
 })
 
 config.outbounds.forEach(outbound => {
