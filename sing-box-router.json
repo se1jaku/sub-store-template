@@ -233,6 +233,7 @@
         "rule_set": [
           "geosite-line",
           "geosite-imgur",
+          "geosite-yahoo",
           "geosite-whatsapp",
           "geosite-category-social-media-!cn"
         ],
@@ -617,6 +618,13 @@
         "tag": "geosite-whatsapp",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-whatsapp.srs",
+        "download_detour": "🏳️ 配置更新专用"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-yahoo",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-yahoo.srs",
         "download_detour": "🏳️ 配置更新专用"
       },
       {
