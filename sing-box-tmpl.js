@@ -17,57 +17,91 @@ let proxies = await produceArtifact({
 config.outbounds.push(...proxies)
 
 config.outbounds.map(i => {
-  if (['🇭🇰 香港', '🇭🇰 香港【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(rfc|jinx|ctc|dmit|bage|enos|misaka|sharon|fx|yxvm|isif|claw|bwg)/i))
-  }
+  // special
   if (['🇭🇰 香港-HKT', '🇭🇰 香港-HKT【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(hkt)/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(hkt)-/i))
   }
   if (['🇭🇰 香港-HGC', '🇭🇰 香港-HGC【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(hgc)/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(hgc)-/i))
   }
   if (['🇼🇸 台湾-HiNet', '🇼🇸 台湾-HiNet【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-(hinet)/i))
+    i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-(hinet)-/i))
   }
-  if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-(rfc|dmit|enos|misaka|sharon|fx|yxvm|isif|claw|bwg)/i))
-  }
-  if (['🇯🇵 日本', '🇯🇵 日本【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-(rfc|dmit|enos|misaka|sharon|fx|yxvm|isif|claw|bwg)/i))
-  }
-  if (['🇺🇸 美国', '🇺🇸 美国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-(rfc|dmit|enos|misaka)/i))
-  }
-  if (['🇩🇪 德国', '🇩🇪 德国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(德国|us)-(rfc|dmit|enos|misaka)/i))
-  }
-  // original
-  if (['🇼🇸 台湾原生', '🇼🇸 台湾原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-(orig|bage|akari|bytevirt)/i))
-  }
-  if (['🇸🇬 新加坡原生', '🇸🇬 新加坡原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-(orig|bage|halo)/i))
-  }
-  if (['🇲🇾 马来西亚原生', '🇲🇾 马来西亚原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇲🇾\s+(马来西亚|my)-(orig|bage|terabix)/i))
-  }
-  if (['🇦🇺 澳大利亚原生', '🇦🇺 澳大利亚原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇦🇺\s+(澳大利亚|au)-(orig|bage|wepc)/i))
-  }
-  if (['🇺🇸 美国原生', '🇺🇸 美国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(orig|bage)/i))
-  }
-  if (['🇩🇪 德国原生', '🇩🇪 德国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-(orig|bage)/i))
-  }
-  if (['🇬🇧 英国原生', '🇬🇧 英国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇬🇧\s+(英国|uk)-(orig|bage)/i))
-  }
-  if (['🇳🇱 荷兰DCMA', '🇳🇱 荷兰DCMA【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-(orig|dcma)/i))
+  if (['🇳🇱 荷兰-DCMA', '🇳🇱 荷兰-DCMA【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-(dcma)-/i))
   }
 
-  // home boardband
+  // NOTE: global major, following country code order
+  if (['🇺🇸 美国', '🇺🇸 美国【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-(misaka|enos|dmit|rfc)-/i))
+  }
+  if (['🇷🇺 俄罗斯', '🇷🇺 俄罗斯【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-(misaka|enos|dmit|rfc)-/i))
+  }
+  if (['🇩🇪 德国', '🇩🇪 德国【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(德国|us)-(misaka|enos|dmit|rfc|bage)-/i))
+  }
+  if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-(misaka|enos|dmit|rfc|bage|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
+  }
+  if (['🇯🇵 日本', '🇯🇵 日本【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-(misaka|enos|dmit|rfc|bage|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
+  }
+  if (['🇰🇷 韩国', '🇰🇷 韩国【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-(misaka|enos|dmit|rfc|bage|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
+  }
+  if (['🇭🇰 香港', '🇭🇰 香港【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(misaka|enos|dmit|rfc|bage|sharon|gomami|fx|yxvm|isif|claw|bwg|jinx|ctc)-/i))
+  }
+
+  // NOTE: global original, following country code order
+  if (['🇺🇳 全球原生', '🇺🇳 全球原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-(orig|bage|akari)-/i))
+  }
+  if (['🇺🇸 美国原生', '🇺🇸 美国原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(orig|bage)-/i))
+  }
+  if (['🇨🇦 加拿大原生', '🇨🇦 加拿大原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇨🇦\s+(加拿大|ca)-(orig|bage)-/i))
+  }
+  if (['🇷🇺 俄罗斯原生', '🇷🇺 俄罗斯原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-(orig|bage)-/i))
+  }
+  if (['🇳🇱 荷兰原生', '🇳🇱 荷兰原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-(orig|bage)-/i))
+  }
+  if (['🇫🇷 法国原生', '🇫🇷 法国原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇫🇷\s+(法国|fr)-(orig|bage)-/i))
+  }
+  if (['🇬🇧 英国原生', '🇬🇧 英国原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇬🇧\s+(英国|uk)-(orig|bage)-/i))
+  }
+  if (['🇩🇪 德国原生', '🇩🇪 德国原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-(orig|bage)-/i))
+  }
+  if (['🇦🇺 澳大利亚原生', '🇦🇺 澳大利亚原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇦🇺\s+(澳大利亚|au)-(orig|bage)-/i))
+  }
+  if (['🇸🇬 新加坡原生', '🇸🇬 新加坡原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-(orig|bage)-/i))
+  }
+  if (['🇯🇵 日本原生', '🇯🇵 日本原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-(orig|akari|bage)--/i))
+  }
+  if (['🇰🇷 韩国原生', '🇰🇷 韩国原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-(orig|bage)-/i))
+  }
+  if (['🇭🇰 香港原生', '🇭🇰 香港原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(orig|bage)-/i))
+  }
+  if (['🇲🇴 澳门原生', '🇲🇴 澳门原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇲🇴\s+(澳门|mo)-(orig|bage)-/i))
+  }
+  if (['🇼🇸 台湾原生', '🇼🇸 台湾原生【自动】'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-(orig|akari|bage)-/i))
+  }
+
+  // NOTE: global home boardband, following country code order
   if (['🇺🇳 全球家宽', '🇺🇳 全球家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-(aio)-/i))
   }
@@ -80,20 +114,29 @@ config.outbounds.map(i => {
   if (['🇷🇺 俄罗斯家宽'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-(aio)-/i))
   }
-  if (['🇲🇾 马来西亚家宽'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇲🇾\s+(马来西亚|my)-(aio)-/i))
+  if (['🇳🇱 荷兰家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-(aio)-/i))
   }
-  if (['🇮🇩 印度尼西亚家宽'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇮🇩\s+(印度尼西亚|id)-(aio)-/i))
+  if (['🇫🇷 法国家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇫🇷\s+(法国|fr)-(aio)-/i))
+  }
+  if (['🇬🇧 英国家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇬🇧\s+(英国|uk)-(aio)-/i))
+  }
+  if (['🇩🇪 德国家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-(aio)-/i))
+  }
+  if (['🇦🇺 澳大利亚家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇦🇺\s+(澳大利亚|au)-(aio)-/i))
   }
   if (['🇸🇬 新加坡家宽'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-(aio)-/i))
   }
-  if (['🇹🇭 泰国家宽'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇹🇭\s+(泰国|th)-(aio)-/i))
-  }
   if (['🇯🇵 日本家宽'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-(aio)-/i))
+  }
+  if (['🇰🇷 韩国家宽'].includes(i.tag)) {
+    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-(aio)-/i))
   }
   if (['🇭🇰 香港家宽'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-(aio)-/i))
