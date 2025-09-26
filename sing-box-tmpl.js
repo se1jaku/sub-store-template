@@ -56,10 +56,10 @@ config.outbounds.map(i => {
 
   // NOTE: global original, following country code order
   if (['🇺🇳 全球原生', '🇺🇳 全球原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-(orig|bage|akari)-/i))
+    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-([a-z]+-)?(orig|bage|akari)-/i))
   }
   if (['🇺🇸 美国原生', '🇺🇸 美国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(orig|bage)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(orig|misaka|bage)-/i))
   }
   if (['🇨🇦 加拿大原生', '🇨🇦 加拿大原生【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇨🇦\s+(加拿大|ca)-(orig|bage)-/i))
@@ -103,7 +103,7 @@ config.outbounds.map(i => {
 
   // NOTE: global home boardband, following country code order
   if (['🇺🇳 全球家宽', '🇺🇳 全球家宽【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-(aio)-/i))
+    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-([a-z]+-)?(aio)-/i))
   }
   if (['🇺🇸 美国家宽'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-(aio)-/i))
