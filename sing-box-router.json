@@ -344,25 +344,25 @@
         "type": "remote",
         "tag": "geoip-cn",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs"
       },
       {
         "type": "remote",
         "tag": "geoip-google",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs"
       },
       {
         "type": "remote",
         "tag": "geoip-netflix",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-netflix.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-netflix.srs"
       },
       {
         "type": "remote",
         "tag": "geoip-telegram",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs"
       },
       {
         "type": "remote",
