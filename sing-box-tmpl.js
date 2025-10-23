@@ -105,46 +105,46 @@ config.outbounds.map(i => {
   if (['🇺🇳 全球家宽', '🇺🇳 全球家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇺🇸 美国家宽'].includes(i.tag)) {
+  if (['🇺🇸 美国家宽', '🇺🇸 美国家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇨🇦 加拿大家宽'].includes(i.tag)) {
+  if (['🇨🇦 加拿大家宽', '🇨🇦 加拿大家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇨🇦\s+(加拿大|ca)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇷🇺 俄罗斯家宽'].includes(i.tag)) {
+  if (['🇷🇺 俄罗斯家宽', '🇷🇺 俄罗斯家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇳🇱 荷兰家宽'].includes(i.tag)) {
+  if (['🇳🇱 荷兰家宽', '🇳🇱 荷兰家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇫🇷 法国家宽'].includes(i.tag)) {
+  if (['🇫🇷 法国家宽', '🇫🇷 法国家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇫🇷\s+(法国|fr)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇬🇧 英国家宽'].includes(i.tag)) {
+  if (['🇬🇧 英国家宽', '🇬🇧 英国家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇬🇧\s+(英国|uk)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇩🇪 德国家宽'].includes(i.tag)) {
+  if (['🇩🇪 德国家宽', '🇩🇪 德国家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇦🇺 澳大利亚家宽'].includes(i.tag)) {
+  if (['🇦🇺 澳大利亚家宽', '🇦🇺 澳大利亚家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇦🇺\s+(澳大利亚|au)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇸🇬 新加坡家宽'].includes(i.tag)) {
+  if (['🇸🇬 新加坡家宽', '🇸🇬 新加坡家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇯🇵 日本家宽'].includes(i.tag)) {
+  if (['🇯🇵 日本家宽', '🇯🇵 日本家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇰🇷 韩国家宽'].includes(i.tag)) {
+  if (['🇰🇷 韩国家宽', '🇰🇷 韩国家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇭🇰 香港家宽'].includes(i.tag)) {
+  if (['🇭🇰 香港家宽', '🇭🇰 香港家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇲🇴 澳门家宽'].includes(i.tag)) {
+  if (['🇲🇴 澳门家宽', '🇲🇴 澳门家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇲🇴\s+(澳门|mo)-([a-z]+-)?(aio)-/i))
   }
-  if (['🇼🇸 台湾家宽'].includes(i.tag)) {
+  if (['🇼🇸 台湾家宽', '🇼🇸 台湾家宽【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-([a-z]+-)?(aio)-/i))
   }
 })
