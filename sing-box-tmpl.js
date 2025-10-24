@@ -196,7 +196,19 @@ config.outbounds.map(i => {
   }
 })
 
-// TODO: fill original with corresponding homeboard
+// set auto group as the first of correspoding group
+config.outbounds.forEach(outbound => {
+  if (outbound.tag.endsWith('【自动】')) {
+    const baseTag = outbound.tag.replace('【自动】', '');
+    const baseOutbound = config.outbounds.find(item => item.tag === baseTag);
+
+    if (baseOutbound) {
+      baseOutbound.outbounds.unshift(outbound.tag);
+    }
+  }
+});
+
+// fill original with corresponding homeboard
 original_outbounds.forEach(outbound => {
   const targetTag = outbound.tag.replace('原生', '家宽');
   const matched = homeboard_outbounds.find(item => item.tag === targetTag);
