@@ -101,7 +101,7 @@ config.outbounds.map(i => {
     i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(orig|bage)-/i))
   }
   if (['🇯🇵 日本原生', '🇯🇵 日本原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(orig|akari|bage)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(orig|misaka|akari|bage)-/i))
   }
   if (['🇰🇷 韩国原生', '🇰🇷 韩国原生【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(orig|bage)-/i))
