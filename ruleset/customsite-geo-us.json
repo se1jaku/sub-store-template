@@ -2,9 +2,11 @@
     "version": 3,
     "rules": [
         {
-            "domain": [],
+            "domain": [
+                "lala.gg"
+            ],
             "domain_suffix": [
-                ".steamserver.net"
+                ".lala.gg"
             ],
             "domain_regex": []
         }

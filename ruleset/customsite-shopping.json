@@ -2,9 +2,11 @@
     "version": 3,
     "rules": [
         {
-            "domain": [],
+            "domain": [
+                "rfchost.com"
+            ],
             "domain_suffix": [
-                ".steamserver.net"
+                ".rfchost.com"
             ],
             "domain_regex": []
         }
