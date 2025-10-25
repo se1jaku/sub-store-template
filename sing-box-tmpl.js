@@ -49,7 +49,7 @@ config.outbounds.map(i => {
     general_outbounds.push(i)
   }
   if (['🇩🇪 德国', '🇩🇪 德国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|us)-([a-z]+-)?(misaka|enos|dmit|rfc|bage)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-([a-z]+-)?(misaka|enos|dmit|rfc|bage)-/i))
     general_outbounds.push(i)
   }
   if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
