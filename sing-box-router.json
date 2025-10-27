@@ -18,7 +18,7 @@
       },
       {
         "tag": "local",
-        "address": "172.21.21.1",
+        "type": "local",
         "detour": "direct"
       },
       {
@@ -41,11 +41,6 @@
       }
     ],
     "rules": [
-      {
-        "outbound": "any",
-        "action": "route",
-        "server": "server_resolver"
-      },
       {
         "clash_mode": "direct",
         "action": "route",
@@ -354,6 +349,10 @@
     ],
     "final": "🏁 默认出口",
     "auto_detect_interface": true,
+    "default_domain_resolver": {
+      "server": "server_resolver",
+      "strategy": "prefer_ipv4"
+    },
     "rule_set": [
       {
         "type": "remote",
