@@ -26,21 +26,21 @@
       {
         "tag": "proxy",
         "type": "https",
-        "address": "one.one.one.one",
+        "server": "one.one.one.one",
         "domain_resolver": "server_resolver",
         "detour": "🚩 Proxy"
       },
       {
         "tag": "Speedtest",
         "type": "https",
-        "address": "one.one.one.one",
+        "server": "one.one.one.one",
         "domain_resolver": "server_resolver",
         "detour": "🚀 Speedtest"
       },
       {
         "tag": "Netflix",
         "type": "https",
-        "address": "one.one.one.one",
+        "server": "one.one.one.one",
         "domain_resolver": "server_resolver",
         "detour": "Netflix"
       }
