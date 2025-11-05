@@ -995,7 +995,7 @@
       "tag": "🇭🇰 香港-HKT【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1009,7 +1009,7 @@
       "tag": "🇭🇰 香港-HGC【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1023,7 +1023,7 @@
       "tag": "🇼🇸 台湾-HiNet【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1037,7 +1037,7 @@
       "tag": "🇳🇱 荷兰-DCMA【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1051,7 +1051,7 @@
       "tag": "🇭🇰 香港【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1065,7 +1065,7 @@
       "tag": "🇸🇬 新加坡【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1079,7 +1079,7 @@
       "tag": "🇯🇵 日本【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1093,7 +1093,7 @@
       "tag": "🇺🇸 美国【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1107,7 +1107,7 @@
       "tag": "🇩🇪 德国【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1121,7 +1121,7 @@
       "tag": "🇺🇳 全球原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1135,7 +1135,7 @@
       "tag": "🇭🇰 香港原生【自动】",
       "interval": "3m",
       "tolerance": 20,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1149,7 +1149,7 @@
       "tag": "🇼🇸 台湾原生【自动】",
       "interval": "3m",
       "tolerance": 20,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1163,7 +1163,7 @@
       "tag": "🇸🇬 新加坡原生【自动】",
       "interval": "3m",
       "tolerance": 30,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1177,7 +1177,7 @@
       "tag": "🇯🇵 日本原生【自动】",
       "interval": "3m",
       "tolerance": 30,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1191,7 +1191,7 @@
       "tag": "🇦🇺 澳大利亚原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1205,7 +1205,7 @@
       "tag": "🇺🇸 美国原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1219,7 +1219,7 @@
       "tag": "🇩🇪 德国原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1233,7 +1233,7 @@
       "tag": "🇬🇧 英国原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1247,7 +1247,7 @@
       "tag": "🇺🇳 全球家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "https://1.1.1.1/cdn-cgi/trace",
+      "url": "http://1.1.1.1/cdn-cgi/trace",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
