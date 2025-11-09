@@ -53,19 +53,19 @@ config.outbounds.map(i => {
     general_outbounds.push(i)
   }
   if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(misaka|enos|dmit|rfc|bage|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(misaka|enos|dmit|rfc|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
     general_outbounds.push(i)
   }
   if (['🇯🇵 日本', '🇯🇵 日本【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(misaka|enos|dmit|rfc|bage|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(misaka|enos|dmit|rfc|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
     general_outbounds.push(i)
   }
   if (['🇰🇷 韩国', '🇰🇷 韩国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(misaka|enos|dmit|rfc|bage|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(misaka|enos|dmit|rfc|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
     general_outbounds.push(i)
   }
   if (['🇭🇰 香港', '🇭🇰 香港【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(misaka|enos|dmit|rfc|bage|sharon|gomami|fx|yxvm|isif|claw|bwg|jinx|ctc)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(misaka|enos|dmit|rfc|sharon|gomami|fx|yxvm|isif|claw|bwg|jinx|ctc)-/i))
     general_outbounds.push(i)
   }
 
