@@ -6,15 +6,10 @@
   "dns": {
     "servers": [
       {
-        "tag": "dns_resolver",
-        "type": "udp",
-        "server": "1.2.4.8"
-      },
-      {
         "tag": "server_resolver",
         "type": "https",
         "server": "dns.alidns.com",
-        "domain_resolver": "dns_resolver"
+        "domain_resolver": "local"
       },
       {
         "tag": "local",
