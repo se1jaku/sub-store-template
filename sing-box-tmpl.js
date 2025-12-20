@@ -1,72 +1,106 @@
-const { type, name } = $arguments
-const compatible_outbound = {
+// input arguments
+let { type, name } = $arguments;
+let compatibleFlag = false;
+type = /^1$|col|组合/i.test(type) ? 'collection' : 'subscription';
+
+const POTENTIAL_TRANSFER_TYPES = new Set(['vless', 'vmess', 'trojan']);
+const POTENTIAL_END_NODE_TYPES = new Set(['shadowsocks', 'socks', 'http']);
+const COMPATIBLE_OUTBOUND = {
   type: 'selector',
   tag: '🔄 COMPATIBLE',
   outbounds: ['🔀 BDGW'],
-}
+};
 
-let compatible
-let config = JSON.parse($files[0])
-let proxies = await produceArtifact({
+const config = JSON.parse($files[0]);
+const artifacts = await produceArtifact({
   name,
-  type: /^1$|col/i.test(type) ? 'collection' : 'subscription',
+  type,
   platform: 'sing-box',
   produceType: 'internal',
-})
+});
+
+const proxies = [];
+const transfers = {};
+
+// generate transfer map
+artifacts.forEach(p => {
+  if (POTENTIAL_TRANSFER_TYPES.has(p.type)) {
+    const key = p.tag
+      .replace(/\p{Extended_Pictographic}/gu, '')
+      .replace(/[\u{1F1E6}-\u{1F1FF}]{2}/gu, '')
+      .trim()
+    transfers[key] = p
+  }
+});
+
+// generate chaining proxies
+artifacts.forEach(p => {
+  if (POTENTIAL_END_NODE_TYPES.has(p.type)) {
+    const regex = /-\(([^()]+)\)$/;
+    const match = p.tag.match(regex);
+    if (match) {
+      p.tag = p.tag.replace(regex, '-$1');
+      p.detour = match[1] in transfers ? transfers[match[1]].tag : null;
+    }
+  }
+  proxies.push(p);
+});
 
 // outbounds group
-let special_outbounds = []
-let general_outbounds = []
+const specialOutbounds = [];
+const generalOutbounds = [];
 
-config.outbounds.push(...proxies)
+function getTags(proxies, regex) {
+  return (regex ? proxies.filter(p => regex.test(p.tag)) : proxies).map(p => p.tag)
+}
 
 config.outbounds.map(i => {
   // special
   if (['🇭🇰 香港-HKT', '🇭🇰 香港-HKT【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(hkt)-/i))
-    special_outbounds.push(i)
+    specialOutbounds.push(i)
   }
   if (['🇭🇰 香港-HGC', '🇭🇰 香港-HGC【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(hgc)-/i))
-    special_outbounds.push(i)
+    specialOutbounds.push(i)
   }
   if (['🇼🇸 台湾-HiNet', '🇼🇸 台湾-HiNet【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-([a-z]+-)?(hinet)-/i))
-    special_outbounds.push(i)
+    specialOutbounds.push(i)
   }
   if (['🇳🇱 荷兰-DCMA', '🇳🇱 荷兰-DCMA【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-([a-z]+-)?(dcma)-/i))
-    special_outbounds.push(i)
+    specialOutbounds.push(i)
   }
 
   // NOTE: global major, following country code order
   if (['🇺🇸 美国', '🇺🇸 美国【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(misaka|enos|dmit|rfc)-/i))
-    general_outbounds.push(i)
+    generalOutbounds.push(i)
   }
   if (['🇷🇺 俄罗斯', '🇷🇺 俄罗斯【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-([a-z]+-)?(misaka|enos|dmit|rfc)-/i))
-    general_outbounds.push(i)
+    generalOutbounds.push(i)
   }
   if (['🇩🇪 德国', '🇩🇪 德国【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-([a-z]+-)?(misaka|enos|dmit|rfc|bage)-/i))
-    general_outbounds.push(i)
+    generalOutbounds.push(i)
   }
   if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(misaka|enos|dmit|rfc|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
-    general_outbounds.push(i)
+    generalOutbounds.push(i)
   }
   if (['🇯🇵 日本', '🇯🇵 日本【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(misaka|enos|dmit|rfc|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
-    general_outbounds.push(i)
+    generalOutbounds.push(i)
   }
   if (['🇰🇷 韩国', '🇰🇷 韩国【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(misaka|enos|dmit|rfc|sharon|gomami|fx|yxvm|isif|claw|bwg)-/i))
-    general_outbounds.push(i)
+    generalOutbounds.push(i)
   }
   if (['🇭🇰 香港', '🇭🇰 香港【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(misaka|enos|dmit|rfc|sharon|gomami|fx|yxvm|isif|claw|bwg|jinx|ctc)-/i))
-    general_outbounds.push(i)
+    generalOutbounds.push(i)
   }
 
   // NOTE: global original, following country code order
@@ -191,16 +225,15 @@ config.outbounds.forEach(outbound => {
 // fill empty outbounds with compatible
 config.outbounds.forEach(outbound => {
   if (Array.isArray(outbound.outbounds) && outbound.outbounds.length === 0) {
-    if (!compatible) {
-      config.outbounds.push(compatible_outbound)
-      compatible = true
+    if (!compatibleFlag) {
+      config.outbounds.push(COMPATIBLE_OUTBOUND)
+      compatibleFlag = true
     }
-    outbound.outbounds.push(compatible_outbound.tag);
+    outbound.outbounds.push(COMPATIBLE_OUTBOUND.tag);
   }
 });
 
-$content = JSON.stringify(config, null, 2)
+// fill proxies
+config.outbounds.push(...proxies)
 
-function getTags(proxies, regex) {
-  return (regex ? proxies.filter(p => regex.test(p.tag)) : proxies).map(p => p.tag)
-}
+$content = JSON.stringify(config, null, 2)
