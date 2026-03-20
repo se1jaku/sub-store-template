@@ -57,53 +57,53 @@ function getTags(proxies, regex) {
 config.outbounds.map(i => {
   // special
   if (['🇭🇰 香港-HKT', '🇭🇰 香港-HKT【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(hkt)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(hkt)(-|<)/i))
     specialOutbounds.push(i)
   }
   if (['🇭🇰 香港-HGC', '🇭🇰 香港-HGC【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(hgc)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(hgc)(-|<)/i))
     specialOutbounds.push(i)
   }
   if (['🇼🇸 台湾-HiNet', '🇼🇸 台湾-HiNet【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-([a-z]+-)?(hinet)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-([a-z]+-)?(hinet)(-|<)/i))
     specialOutbounds.push(i)
   }
   if (['🇯🇵 日本-SoftBank', '🇯🇵 日本-SoftBank【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(softbank)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(softbank)(-|<)/i))
     specialOutbounds.push(i)
   }
   if (['🇳🇱 荷兰-DCMA', '🇳🇱 荷兰-DCMA【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-([a-z]+-)?(dcma)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-([a-z]+-)?(dcma)(-|<)/i))
     specialOutbounds.push(i)
   }
 
   // NOTE: global major, following country code order
   if (['🇺🇸 美国', '🇺🇸 美国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(misaka|enos|dmit|rfc|hh)((\[[a-z]+\])|-)/i))
+    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(misaka|enos|dmit|rfc|hh)(-|\[[a-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇷🇺 俄罗斯', '🇷🇺 俄罗斯【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-([a-z]+-)?(misaka|enos|dmit|rfc|hh)((\[[a-z]+\])|-)/i))
+    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-([a-z]+-)?(misaka|enos|dmit|rfc|hh)(-|\[[a-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇩🇪 德国', '🇩🇪 德国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|bage)((\[[a-z]+\])|-)/i))
+    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|bage)(-|\[[a-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)((\[[a-z]+\])|-)/i))
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)(-|\[[a-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇯🇵 日本', '🇯🇵 日本【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)((\[[a-z]+\])|-)/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)(-|\[[a-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇰🇷 韩国', '🇰🇷 韩国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)((\[[a-z]+\])|-)/i))
+    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)(-|\[[a-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇭🇰 香港', '🇭🇰 香港【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg|jinx|ctc)((\[[a-z]+\])|-)/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg|jinx|ctc)(-|\[[a-z]+\])/i))
     generalOutbounds.push(i)
   }
 
