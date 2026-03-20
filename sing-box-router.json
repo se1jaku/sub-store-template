@@ -754,6 +754,7 @@
         "🇼🇸 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
         "🇺🇸 美国家宽",
         "🇨🇦 加拿大家宽",
         "🇺🇳 全球家宽"
@@ -763,9 +764,11 @@
       "type": "selector",
       "tag": "Crypto",
       "outbounds": [
-        "🇯🇵 日本",
-        "🇯🇵 日本原生",
-        "🇺🇳 全球原生",
+        "🇯🇵 日本-SoftBank",
+        "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
+        "🇺🇸 美国家宽",
+        "🇨🇦 加拿大家宽",
         "🇺🇳 全球家宽"
       ]
     },
@@ -794,6 +797,7 @@
         "🇼🇸 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
         "🇺🇸 美国家宽",
         "🇨🇦 加拿大家宽",
         "🇺🇳 全球原生",
@@ -814,6 +818,7 @@
         "🇼🇸 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
         "🇺🇸 美国家宽",
         "🇨🇦 加拿大家宽",
         "🇺🇳 全球原生",
@@ -838,6 +843,7 @@
         "🇼🇸 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
         "🇺🇸 美国家宽",
         "🇨🇦 加拿大家宽",
         "🇺🇳 全球原生",
@@ -862,6 +868,7 @@
         "🇼🇸 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
         "🇺🇸 美国家宽",
         "🇨🇦 加拿大家宽",
         "🇺🇳 全球原生",
@@ -886,6 +893,7 @@
         "🇼🇸 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
         "🇺🇸 美国家宽",
         "🇨🇦 加拿大家宽",
         "🇺🇳 全球原生",
@@ -910,6 +918,7 @@
         "🇼🇸 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
         "🇺🇸 美国家宽",
         "🇨🇦 加拿大家宽",
         "🇺🇳 全球原生",
@@ -1279,8 +1288,26 @@
       "outbounds": []
     },
     {
+      "type": "urltest",
+      "tag": "🇭🇰 香港家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "http://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
       "type": "selector",
       "tag": "🇭🇰 香港家宽",
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇲🇴 澳门家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "http://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
       "outbounds": []
     },
     {
@@ -1289,8 +1316,26 @@
       "outbounds": []
     },
     {
+      "type": "urltest",
+      "tag": "🇼🇸 台湾家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "http://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
       "type": "selector",
       "tag": "🇼🇸 台湾家宽",
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇸🇬 新加坡家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "http://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
       "outbounds": []
     },
     {
@@ -1299,8 +1344,40 @@
       "outbounds": []
     },
     {
+      "type": "urltest",
+      "tag": "🇯🇵 日本家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "http://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
       "type": "selector",
       "tag": "🇯🇵 日本家宽",
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇰🇷 韩国家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "http://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "type": "selector",
+      "tag": "🇰🇷 韩国家宽",
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇷🇺 俄罗斯家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "http://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
       "outbounds": []
     },
     {
@@ -1309,8 +1386,26 @@
       "outbounds": []
     },
     {
+      "type": "urltest",
+      "tag": "🇺🇸 美国家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "http://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
       "type": "selector",
       "tag": "🇺🇸 美国家宽",
+      "outbounds": []
+    },
+    {
+      "type": "urltest",
+      "tag": "🇨🇦 加拿大家宽【自动】",
+      "interval": "3m",
+      "tolerance": 50,
+      "url": "http://1.1.1.1/cdn-cgi/trace",
+      "interrupt_exist_connections": true,
       "outbounds": []
     },
     {
