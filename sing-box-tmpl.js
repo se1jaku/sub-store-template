@@ -79,31 +79,31 @@ config.outbounds.map(i => {
 
   // NOTE: global major, following country code order
   if (['🇺🇸 美国', '🇺🇸 美国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(misaka|enos|dmit|rfc|hh)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(misaka|enos|dmit|rfc|hh)((\[[a-z]+\])|-)/i))
     generalOutbounds.push(i)
   }
   if (['🇷🇺 俄罗斯', '🇷🇺 俄罗斯【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-([a-z]+-)?(misaka|enos|dmit|rfc|hh)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-([a-z]+-)?(misaka|enos|dmit|rfc|hh)((\[[a-z]+\])|-)/i))
     generalOutbounds.push(i)
   }
   if (['🇩🇪 德国', '🇩🇪 德国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|bage)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|bage)((\[[a-z]+\])|-)/i))
     generalOutbounds.push(i)
   }
   if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)((\[[a-z]+\])|-)/i))
     generalOutbounds.push(i)
   }
   if (['🇯🇵 日本', '🇯🇵 日本【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)((\[[a-z]+\])|-)/i))
     generalOutbounds.push(i)
   }
   if (['🇰🇷 韩国', '🇰🇷 韩国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg)((\[[a-z]+\])|-)/i))
     generalOutbounds.push(i)
   }
   if (['🇭🇰 香港', '🇭🇰 香港【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg|jinx|ctc)-/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(misaka|enos|dmit|rfc|hh|sharon|gomami|neburst|fx|yxvm|isif|claw|bwg|jinx|ctc)((\[[a-z]+\])|-)/i))
     generalOutbounds.push(i)
   }
 
