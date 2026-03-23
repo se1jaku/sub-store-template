@@ -69,7 +69,7 @@ config.outbounds.map(i => {
     specialOutbounds.push(i)
   }
   if (['🇯🇵 日本-SoftBank', '🇯🇵 日本-SoftBank【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(softbank)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(softbank|sb)(-|<)/i))
     specialOutbounds.push(i)
   }
   if (['🇳🇱 荷兰-DCMA', '🇳🇱 荷兰-DCMA【自动】'].includes(i.tag)) {
