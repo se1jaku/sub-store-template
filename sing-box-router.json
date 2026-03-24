@@ -194,6 +194,15 @@
         "outbound": "⬇️ Download"
       },
       {
+        "protocol": [
+          "quic"
+        ],
+        "client": [
+          "safari"
+        ],
+        "action": "reject"
+      },
+      {
         "rule_set": [
           "customsite-netflix"
         ],
