@@ -34,7 +34,7 @@
         "type": "https",
         "server": "one.one.one.one",
         "domain_resolver": "server_resolver",
-        "detour": "Netflix"
+        "detour": "🎬 Netflix"
       }
     ],
     "rules": [
