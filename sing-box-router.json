@@ -869,7 +869,7 @@
       "type": "selector",
       "tag": "🚀 Speedtest",
       "outbounds": [
-        "🚩 Proxy",
+        "🏁 默认出口",
         "direct"
       ]
     },
