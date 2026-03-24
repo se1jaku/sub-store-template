@@ -154,7 +154,7 @@
       {
         "clash_mode": "global",
         "action": "route",
-        "outbound": "🏁 默认出口"
+        "outbound": "🚩 Proxy"
       },
       {
         "rule_set": [
@@ -170,7 +170,7 @@
         "outbound": "direct"
       },
       {
-        "protocol": [
+        "network": [
           "icmp"
         ],
         "action": "route",
