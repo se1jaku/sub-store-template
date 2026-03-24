@@ -194,15 +194,6 @@
         "outbound": "⬇️ Download"
       },
       {
-        "protocol": [
-          "quic"
-        ],
-        "client": [
-          "safari"
-        ],
-        "action": "reject"
-      },
-      {
         "rule_set": [
           "customsite-netflix"
         ],
@@ -449,6 +440,13 @@
         ],
         "action": "route",
         "outbound": "↩️ Direct"
+      },
+      {
+        "network": "udp",
+        "port": [
+          443
+        ],
+        "action": "reject"
       }
     ],
     "final": "🏁 默认出口",
