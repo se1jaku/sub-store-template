@@ -704,28 +704,28 @@
         "type": "remote",
         "tag": "skksiteplus-stream_hk",
         "format": "source",
-        "url": "https://ruleset.skk.moe/sing-box/non-ip/stream_hk.json",
+        "url": "https://ruleset.skk.moe/sing-box/non_ip/stream_hk.json",
         "update_interval": "8h"
       },
       {
         "type": "remote",
         "tag": "skksiteplus-stream_jp",
         "format": "source",
-        "url": "https://ruleset.skk.moe/sing-box/non-ip/stream_jp.json",
+        "url": "https://ruleset.skk.moe/sing-box/non_ip/stream_jp.json",
         "update_interval": "8h"
       },
       {
         "type": "remote",
         "tag": "skksiteplus-stream_tw",
         "format": "source",
-        "url": "https://ruleset.skk.moe/sing-box/non-ip/stream_tw.json",
+        "url": "https://ruleset.skk.moe/sing-box/non_ip/stream_tw.json",
         "update_interval": "8h"
       },
       {
         "type": "remote",
         "tag": "skksiteplus-stream_us",
         "format": "source",
-        "url": "https://ruleset.skk.moe/sing-box/non-ip/stream_us.json",
+        "url": "https://ruleset.skk.moe/sing-box/non_ip/stream_us.json",
         "update_interval": "8h"
       },
       {
