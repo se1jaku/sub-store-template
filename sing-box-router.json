@@ -231,7 +231,7 @@
       },
       {
         "rule_set": [
-          "geosite-category-🪙 Cryptocurrency"
+          "geosite-category-cryptocurrency"
         ],
         "action": "route",
         "outbound": "🪙 Crypto"
@@ -478,6 +478,13 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-category-cryptocurrency",
+        "format": "binary",
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-cryptocurrency.srs",
+        "update_interval": "8h"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-category-dev",
         "format": "binary",
         "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-dev.srs",
@@ -544,13 +551,6 @@
         "tag": "geosite-category-social-media-!cn",
         "format": "binary",
         "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-social-media-!cn.srs",
-        "update_interval": "8h"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-category-🪙 Cryptocurrency",
-        "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-🪙 Cryptocurrency.srs",
         "update_interval": "8h"
       },
       {
