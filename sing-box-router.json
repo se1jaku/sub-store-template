@@ -208,6 +208,22 @@
         "outbound": "🚀 Speedtest"
       },
       {
+        "network": "udp",
+        "port": [
+          123
+        ],
+        "action": "route",
+        "outbound": "🔀 BDGW"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ntp",
+          "geosite-category-remote-control"
+        ],
+        "action": "route",
+        "outbound": "🔀 BDGW"
+      },
+      {
         "rule_set": [
           "skksite-cdn"
         ],
@@ -331,7 +347,7 @@
           "geosite-category-social-media-!cn"
         ],
         "action": "route",
-        "outbound": "Social Media"
+        "outbound": "🌐 Social Media"
       },
       {
         "rule_set": [
@@ -360,14 +376,6 @@
         ],
         "action": "route",
         "outbound": "Microsoft"
-      },
-      {
-        "rule_set": [
-          "geosite-category-ntp",
-          "geosite-category-remote-control"
-        ],
-        "action": "route",
-        "outbound": "NTP & Remote Control"
       },
       {
         "rule_set": [
@@ -1156,7 +1164,7 @@
     },
     {
       "type": "selector",
-      "tag": "Social Media",
+      "tag": "🌐 Social Media",
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
@@ -1235,18 +1243,6 @@
         "🇳🇱 荷兰-DCMA",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
-      ]
-    },
-    {
-      "type": "selector",
-      "tag": "NTP & Remote Control",
-      "outbounds": [
-        "🔀 BDGW",
-        "🇭🇰 香港",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本",
-        "🇺🇸 美国",
-        "🇩🇪 德国"
       ]
     },
     {
