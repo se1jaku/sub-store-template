@@ -4,9 +4,9 @@
         {
             "domain": [],
             "domain_suffix": [
-                ".steamserver.net",
                 ".zscaler.com",
-                ".zscaler.net"
+                ".zscaler.net",
+                ".steamserver.net"
             ],
             "domain_regex": []
         }

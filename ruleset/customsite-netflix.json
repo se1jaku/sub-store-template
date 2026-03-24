@@ -3,9 +3,11 @@
     "rules": [
         {
             "domain": [
+                "fast.com",
                 "appboot.netflix.com"
             ],
             "domain_suffix": [
+                ".fast.com",
                 ".ios-appboot.netflix.com",
                 ".android-appboot.netflix.com",
                 ".appboot.netflix.com",
