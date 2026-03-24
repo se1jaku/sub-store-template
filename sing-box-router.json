@@ -171,12 +171,33 @@
       },
       {
         "protocol": [
+          "icmp"
+        ],
+        "action": "route",
+        "outbound": "direct"
+      },
+      {
+        "protocol": [
           "stun",
           "ssh",
           "rdp"
         ],
         "action": "route",
         "outbound": "🔀 BDGW"
+      },
+      {
+        "protocol": [
+          "bittorrent"
+        ],
+        "action": "route",
+        "outbound": "⬇️ Download"
+      },
+      {
+        "rule_set": [
+          "customsite-netflix"
+        ],
+        "action": "route",
+        "outbound": "Netflix"
       },
       {
         "rule_set": [
@@ -187,10 +208,17 @@
       },
       {
         "rule_set": [
-          "customsite-netflix"
+          "skksite-cdn"
         ],
         "action": "route",
-        "outbound": "Netflix"
+        "outbound": "🔀 BDGW"
+      },
+      {
+        "protocol": [
+          "skksite-download"
+        ],
+        "action": "route",
+        "outbound": "⬇️ Download"
       },
       {
         "rule_set": [
@@ -283,7 +311,6 @@
       },
       {
         "rule_set": [
-          "geoip-google",
           "geosite-google"
         ],
         "action": "route",
@@ -342,6 +369,24 @@
         ],
         "action": "route",
         "outbound": "🚩 Proxy"
+      },
+      {
+        "rule_set": [
+          "geoip-google"
+        ],
+        "action": "route",
+        "outbound": "Google"
+      },
+      {
+        "network": "tcp",
+        "port": [
+          465,
+          587,
+          993,
+          995
+        ],
+        "action": "route",
+        "outbound": "📧 Email"
       }
     ],
     "final": "🏁 默认出口",
@@ -599,6 +644,12 @@
       },
       {
         "type": "remote",
+        "tag": "skksite-cdn",
+        "format": "source",
+        "url": "https://ruleset.skk.moe/sing-box/domainset/cdn.json"
+      },
+      {
+        "type": "remote",
         "tag": "customsite-direct",
         "format": "source",
         "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-direct.json"
@@ -725,6 +776,21 @@
     },
     {
       "type": "selector",
+      "tag": "📧 Email",
+      "outbounds": [
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
+        "🇬🇧 英国原生"
+      ]
+    },
+    {
+      "type": "selector",
       "tag": "🔀 BDGW",
       "outbounds": [
         "🇭🇰 香港【自动】",
@@ -732,6 +798,18 @@
         "🇯🇵 日本【自动】",
         "🇺🇸 美国【自动】",
         "🇩🇪 德国【自动】"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "⬇️ Download",
+      "outbounds": [
+        "🇭🇰 香港【自动】",
+        "🇸🇬 新加坡【自动】",
+        "🇯🇵 日本【自动】",
+        "🇺🇸 美国【自动】",
+        "🇩🇪 德国【自动】",
+        "direct"
       ]
     },
     {
