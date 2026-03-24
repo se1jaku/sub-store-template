@@ -231,27 +231,6 @@
       },
       {
         "rule_set": [
-          "geosite-category-cryptocurrency"
-        ],
-        "action": "route",
-        "outbound": "🪙 Crypto"
-      },
-      {
-        "rule_set": [
-          "geosite-category-dev"
-        ],
-        "action": "route",
-        "outbound": "💻 Developer"
-      },
-      {
-        "rule_set": [
-          "geosite-category-ai-!cn"
-        ],
-        "action": "route",
-        "outbound": "🤖 AI"
-      },
-      {
-        "rule_set": [
           "skksiteplus-stream_hk"
         ],
         "action": "route",
@@ -280,6 +259,70 @@
       },
       {
         "rule_set": [
+          "geosite-category-cryptocurrency"
+        ],
+        "action": "route",
+        "outbound": "🪙 Crypto"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "action": "route",
+        "outbound": "🤖 AI"
+      },
+      {
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "action": "route",
+        "outbound": "🎵 Tiktok"
+      },
+      {
+        "rule_set": [
+          "geosite-spotify"
+        ],
+        "action": "route",
+        "outbound": "🎧 Spotify"
+      },
+      {
+        "rule_set": [
+          "geosite-disney"
+        ],
+        "action": "route",
+        "outbound": "🏰 Disney+"
+      },
+      {
+        "rule_set": [
+          "geoip-netflix",
+          "geosite-netflix"
+        ],
+        "action": "route",
+        "outbound": "🎬 Netflix"
+      },
+      {
+        "rule_set": [
+          "geosite-hbo"
+        ],
+        "action": "route",
+        "outbound": "🎬 HBO Max"
+      },
+      {
+        "rule_set": [
+          "geosite-primevideo"
+        ],
+        "action": "route",
+        "outbound": "🎬 Amazon Prime Video"
+      },
+      {
+        "rule_set": [
+          "geosite-category-dev"
+        ],
+        "action": "route",
+        "outbound": "💻 Developer"
+      },
+      {
+        "rule_set": [
           "geosite-line",
           "geosite-imgur",
           "geosite-yahoo",
@@ -288,43 +331,6 @@
         ],
         "action": "route",
         "outbound": "Social Media"
-      },
-      {
-        "rule_set": [
-          "geosite-tiktok"
-        ],
-        "action": "route",
-        "outbound": "Tiktok"
-      },
-      {
-        "rule_set": [
-          "geosite-spotify"
-        ],
-        "action": "route",
-        "outbound": "Spotify"
-      },
-      {
-        "rule_set": [
-          "geoip-netflix",
-          "geosite-netflix"
-        ],
-        "action": "route",
-        "outbound": "Netflix"
-      },
-      {
-        "rule_set": [
-          "geosite-disney"
-        ],
-        "action": "route",
-        "outbound": "Disney+"
-      },
-      {
-        "rule_set": [
-          "geosite-hbo",
-          "geosite-primevideo"
-        ],
-        "action": "route",
-        "outbound": "Global Streaming"
       },
       {
         "rule_set": [
@@ -920,21 +926,6 @@
     },
     {
       "type": "selector",
-      "tag": "🤖 AI",
-      "outbounds": [
-        "🇼🇸 台湾-HiNet",
-        "🇯🇵 日本-SoftBank",
-        "🇼🇸 台湾家宽",
-        "🇸🇬 新加坡家宽",
-        "🇯🇵 日本家宽",
-        "🇰🇷 韩国家宽",
-        "🇺🇸 美国家宽",
-        "🇨🇦 加拿大家宽",
-        "🇺🇳 全球家宽"
-      ]
-    },
-    {
-      "type": "selector",
       "tag": "🪙 Crypto",
       "outbounds": [
         "🇯🇵 日本-SoftBank",
@@ -947,13 +938,17 @@
     },
     {
       "type": "selector",
-      "tag": "💻 Developer",
+      "tag": "🤖 AI",
       "outbounds": [
-        "🇭🇰 香港",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本",
-        "🇺🇸 美国",
-        "🇩🇪 德国"
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇼🇸 台湾家宽",
+        "🇸🇬 新加坡家宽",
+        "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
+        "🇺🇸 美国家宽",
+        "🇨🇦 加拿大家宽",
+        "🇺🇳 全球家宽"
       ]
     },
     {
@@ -994,7 +989,7 @@
     },
     {
       "type": "selector",
-      "tag": "Tiktok",
+      "tag": "🎵 Tiktok",
       "outbounds": [
         "🇼🇸 台湾-HiNet",
         "🇯🇵 日本-SoftBank",
@@ -1016,7 +1011,7 @@
     },
     {
       "type": "selector",
-      "tag": "Spotify",
+      "tag": "🎧 Spotify",
       "outbounds": [
         "🇼🇸 台湾-HiNet",
         "🇯🇵 日本-SoftBank",
@@ -1034,89 +1029,126 @@
         "🇨🇦 加拿大家宽",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🏰 Disney+",
+      "outbounds": [
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇼🇸 台湾原生",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
+        "🇬🇧 英国原生",
+        "🇭🇰 香港家宽",
+        "🇲🇴 澳门家宽",
+        "🇼🇸 台湾家宽",
+        "🇸🇬 新加坡家宽",
+        "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
+        "🇺🇸 美国家宽",
+        "🇨🇦 加拿大家宽",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🎬 Netflix",
+      "outbounds": [
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇼🇸 台湾原生",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
+        "🇬🇧 英国原生",
+        "🇭🇰 香港家宽",
+        "🇲🇴 澳门家宽",
+        "🇼🇸 台湾家宽",
+        "🇸🇬 新加坡家宽",
+        "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
+        "🇺🇸 美国家宽",
+        "🇨🇦 加拿大家宽",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🎬 HBO Max",
+      "outbounds": [
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇼🇸 台湾原生",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
+        "🇬🇧 英国原生",
+        "🇭🇰 香港家宽",
+        "🇲🇴 澳门家宽",
+        "🇼🇸 台湾家宽",
+        "🇸🇬 新加坡家宽",
+        "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
+        "🇺🇸 美国家宽",
+        "🇨🇦 加拿大家宽",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🎬 Amazon Prime Video",
+      "outbounds": [
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇼🇸 台湾原生",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
+        "🇬🇧 英国原生",
+        "🇭🇰 香港家宽",
+        "🇲🇴 澳门家宽",
+        "🇼🇸 台湾家宽",
+        "🇸🇬 新加坡家宽",
+        "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
+        "🇺🇸 美国家宽",
+        "🇨🇦 加拿大家宽",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "💻 Developer",
+      "outbounds": [
+        "🇭🇰 香港",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本",
+        "🇺🇸 美国",
+        "🇩🇪 德国"
       ]
     },
     {
       "type": "selector",
       "tag": "Social Media",
-      "outbounds": [
-        "🇭🇰 香港-HKT",
-        "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
-        "🇯🇵 日本-SoftBank",
-        "🇼🇸 台湾原生",
-        "🇸🇬 新加坡原生",
-        "🇯🇵 日本原生",
-        "🇺🇸 美国原生",
-        "🇩🇪 德国原生",
-        "🇬🇧 英国原生",
-        "🇭🇰 香港家宽",
-        "🇲🇴 澳门家宽",
-        "🇼🇸 台湾家宽",
-        "🇸🇬 新加坡家宽",
-        "🇯🇵 日本家宽",
-        "🇰🇷 韩国家宽",
-        "🇺🇸 美国家宽",
-        "🇨🇦 加拿大家宽",
-        "🇺🇳 全球原生",
-        "🇺🇳 全球家宽"
-      ]
-    },
-    {
-      "type": "selector",
-      "tag": "Netflix",
-      "outbounds": [
-        "🇭🇰 香港-HKT",
-        "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
-        "🇯🇵 日本-SoftBank",
-        "🇼🇸 台湾原生",
-        "🇸🇬 新加坡原生",
-        "🇯🇵 日本原生",
-        "🇺🇸 美国原生",
-        "🇩🇪 德国原生",
-        "🇬🇧 英国原生",
-        "🇭🇰 香港家宽",
-        "🇲🇴 澳门家宽",
-        "🇼🇸 台湾家宽",
-        "🇸🇬 新加坡家宽",
-        "🇯🇵 日本家宽",
-        "🇰🇷 韩国家宽",
-        "🇺🇸 美国家宽",
-        "🇨🇦 加拿大家宽",
-        "🇺🇳 全球原生",
-        "🇺🇳 全球家宽"
-      ]
-    },
-    {
-      "type": "selector",
-      "tag": "Disney+",
-      "outbounds": [
-        "🇭🇰 香港-HKT",
-        "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
-        "🇯🇵 日本-SoftBank",
-        "🇼🇸 台湾原生",
-        "🇸🇬 新加坡原生",
-        "🇯🇵 日本原生",
-        "🇺🇸 美国原生",
-        "🇩🇪 德国原生",
-        "🇬🇧 英国原生",
-        "🇭🇰 香港家宽",
-        "🇲🇴 澳门家宽",
-        "🇼🇸 台湾家宽",
-        "🇸🇬 新加坡家宽",
-        "🇯🇵 日本家宽",
-        "🇰🇷 韩国家宽",
-        "🇺🇸 美国家宽",
-        "🇨🇦 加拿大家宽",
-        "🇺🇳 全球原生",
-        "🇺🇳 全球家宽"
-      ]
-    },
-    {
-      "type": "selector",
-      "tag": "Global Streaming",
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
