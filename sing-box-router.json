@@ -198,7 +198,7 @@
           "customsite-netflix"
         ],
         "action": "route",
-        "outbound": "Netflix"
+        "outbound": "🎬 Netflix"
       },
       {
         "rule_set": [
@@ -252,7 +252,8 @@
       },
       {
         "rule_set": [
-          "skksiteplus-stream_us"
+          "skksiteplus-stream_us",
+          "geosite-tubi"
         ],
         "action": "route",
         "outbound": "🇺🇸 USA Local Special"
@@ -669,6 +670,13 @@
         "tag": "geosite-tld-cn",
         "format": "binary",
         "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tld-cn.srs",
+        "update_interval": "8h"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-tubi",
+        "format": "binary",
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tubi.srs",
         "update_interval": "8h"
       },
       {
