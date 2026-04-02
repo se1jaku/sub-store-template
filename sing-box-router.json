@@ -1422,7 +1422,6 @@
       "type": "selector",
       "tag": "🔗 UDP",
       "outbounds": [
-        "🚩 Proxy",
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
         "🇼🇸 台湾-HiNet",
