@@ -177,6 +177,13 @@
         "outbound": "direct"
       },
       {
+        "network": "udp",
+        "port": [
+          443
+        ],
+        "action": "reject"
+      },
+      {
         "protocol": [
           "ssh",
           "rdp",
@@ -435,13 +442,6 @@
         ],
         "action": "route",
         "outbound": "↩️ Direct"
-      },
-      {
-        "network": "udp",
-        "port": [
-          443
-        ],
-        "action": "reject"
       },
       {
         "network": "tcp",
@@ -1426,19 +1426,19 @@
       "tag": "Protocol UDP",
       "outbounds": [
         "🚩 Proxy",
+        "🇭🇰 香港",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本",
         "🇭🇰 香港原生",
         "🇼🇸 台湾原生",
         "🇸🇬 新加坡原生",
         "🇯🇵 日本原生",
         "🇺🇸 美国原生",
-        "🇩🇪 德国原生",
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
         "🇼🇸 台湾-HiNet",
         "🇯🇵 日本-SoftBank",
-        "🇳🇱 荷兰-DCMA",
-        "🇺🇳 全球原生",
-        "🇺🇳 全球家宽"
+        "🇺🇳 全球原生"
       ]
     },
     {
