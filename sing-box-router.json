@@ -371,20 +371,32 @@
       },
       {
         "rule_set": [
-          "geosite-category-ecommerce",
           "geosite-category-finance"
         ],
         "action": "route",
-        "outbound": "Ecommerce & Finance"
+        "outbound": "💰 Finance"
       },
       {
         "rule_set": [
-          "geosite-category-forums",
-          "geosite-category-media",
+          "geosite-category-ecommerce",
           "customsite-shopping"
         ],
         "action": "route",
-        "outbound": "Media & Forums"
+        "outbound": "🛍️ Ecommerce"
+      },
+      {
+        "rule_set": [
+          "geosite-category-forums"
+        ],
+        "action": "route",
+        "outbound": "💬 Forums"
+      },
+      {
+        "rule_set": [
+          "geosite-category-media"
+        ],
+        "action": "route",
+        "outbound": "📰 Media"
       },
       {
         "rule_set": [
@@ -457,7 +469,15 @@
       {
         "network": "udp",
         "action": "route",
-        "outbound": "Protocol UDP"
+        "outbound": "🔗 UDP"
+      },
+      {
+        "rule_set": [
+          "geoip-jp",
+          "geoip-kr"
+        ],
+        "action": "route",
+        "outbound": "🇯🇵 日本"
       },
       {
         "rule_set": [
@@ -472,14 +492,6 @@
         ],
         "action": "route",
         "outbound": "🌏 IP Cloudflare"
-      },
-      {
-        "rule_set": [
-          "geoip-jp",
-          "geoip-kr"
-        ],
-        "action": "route",
-        "outbound": "🇯🇵 日本"
       }
     ],
     "final": "🏁 默认出口",
@@ -1282,10 +1294,10 @@
     },
     {
       "type": "selector",
-      "tag": "Ecommerce & Finance",
+      "tag": "💰 Finance",
       "outbounds": [
-        "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
+        "🇭🇰 香港-HKT",
         "🇼🇸 台湾-HiNet",
         "🇯🇵 日本-SoftBank",
         "🇺🇳 全球原生",
@@ -1294,12 +1306,37 @@
     },
     {
       "type": "selector",
-      "tag": "Media & Forums",
+      "tag": "🛍️ Ecommerce",
+      "outbounds": [
+        "🇭🇰 香港-HGC",
+        "🇭🇰 香港-HKT",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "💬 Forums",
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
         "🇼🇸 台湾-HiNet",
         "🇯🇵 日本-SoftBank",
+        "🇳🇱 荷兰-DCMA",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "📰 Media",
+      "outbounds": [
+        "🇯🇵 日本-SoftBank",
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
         "🇳🇱 荷兰-DCMA",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
@@ -1383,6 +1420,26 @@
     },
     {
       "type": "selector",
+      "tag": "🔗 UDP",
+      "outbounds": [
+        "🚩 Proxy",
+        "🇭🇰 香港",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本",
+        "🇭🇰 香港原生",
+        "🇼🇸 台湾原生",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇺🇳 全球原生"
+      ]
+    },
+    {
+      "type": "selector",
       "tag": "🌏 IP Google",
       "outbounds": [
         "🚩 Proxy",
@@ -1419,26 +1476,6 @@
         "🇳🇱 荷兰-DCMA",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
-      ]
-    },
-    {
-      "type": "selector",
-      "tag": "Protocol UDP",
-      "outbounds": [
-        "🚩 Proxy",
-        "🇭🇰 香港",
-        "🇸🇬 新加坡",
-        "🇯🇵 日本",
-        "🇭🇰 香港原生",
-        "🇼🇸 台湾原生",
-        "🇸🇬 新加坡原生",
-        "🇯🇵 日本原生",
-        "🇺🇸 美国原生",
-        "🇭🇰 香港-HKT",
-        "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
-        "🇯🇵 日本-SoftBank",
-        "🇺🇳 全球原生"
       ]
     },
     {
