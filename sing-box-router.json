@@ -178,7 +178,6 @@
       },
       {
         "protocol": [
-          "stun",
           "ssh",
           "rdp",
           "ntp"
@@ -226,6 +225,13 @@
       {
         "rule_set": [
           "skksite-cdn"
+        ],
+        "action": "route",
+        "outbound": "🔀 BDGW"
+      },
+      {
+        "rule_set": [
+          "skksite-icloud_private_relay"
         ],
         "action": "route",
         "outbound": "🔀 BDGW"
@@ -290,6 +296,13 @@
       },
       {
         "rule_set": [
+          "geosite-category-games-!cn"
+        ],
+        "action": "route",
+        "outbound": "🎮 Games"
+      },
+      {
+        "rule_set": [
           "geosite-tiktok"
         ],
         "action": "route",
@@ -351,34 +364,6 @@
       },
       {
         "rule_set": [
-          "geosite-google"
-        ],
-        "action": "route",
-        "outbound": "Google"
-      },
-      {
-        "rule_set": [
-          "skksite-icloud_private_relay"
-        ],
-        "action": "route",
-        "outbound": "🔀 BDGW"
-      },
-      {
-        "rule_set": [
-          "geosite-apple"
-        ],
-        "action": "route",
-        "outbound": "Apple"
-      },
-      {
-        "rule_set": [
-          "geosite-microsoft"
-        ],
-        "action": "route",
-        "outbound": "Microsoft"
-      },
-      {
-        "rule_set": [
           "geosite-category-ecommerce",
           "geosite-category-finance"
         ],
@@ -393,6 +378,34 @@
         ],
         "action": "route",
         "outbound": "Media & Forums"
+      },
+      {
+        "rule_set": [
+          "geosite-cloudflare"
+        ],
+        "action": "route",
+        "outbound": "☁️ Cloudflare"
+      },
+      {
+        "rule_set": [
+          "geosite-google"
+        ],
+        "action": "route",
+        "outbound": "🔍 Google"
+      },
+      {
+        "rule_set": [
+          "geosite-apple"
+        ],
+        "action": "route",
+        "outbound": "🍎 Apple"
+      },
+      {
+        "rule_set": [
+          "geosite-microsoft"
+        ],
+        "action": "route",
+        "outbound": "📊 Microsoft"
       },
       {
         "rule_set": [
@@ -416,13 +429,6 @@
         "outbound": "🚩 Proxy"
       },
       {
-        "rule_set": [
-          "geoip-google"
-        ],
-        "action": "route",
-        "outbound": "Google"
-      },
-      {
         "network": "tcp",
         "port": [
           465,
@@ -432,6 +438,33 @@
         ],
         "action": "route",
         "outbound": "📧 Email"
+      },
+      {
+        "network": "udp",
+        "action": "route",
+        "outbound": "Protocol UDP"
+      },
+      {
+        "rule_set": [
+          "geoip-google"
+        ],
+        "action": "route",
+        "outbound": "🌏 IP Google"
+      },
+      {
+        "rule_set": [
+          "geoip-cloudflare"
+        ],
+        "action": "route",
+        "outbound": "🌏 IP Cloudflare"
+      },
+      {
+        "rule_set": [
+          "geoip-jp",
+          "geoip-kr"
+        ],
+        "action": "route",
+        "outbound": "🇯🇵 日本"
       },
       {
         "network": "tcp",
@@ -458,6 +491,13 @@
     "rule_set": [
       {
         "type": "remote",
+        "tag": "geoip-cloudflare",
+        "format": "binary",
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cloudflare.srs",
+        "update_interval": "8h"
+      },
+      {
+        "type": "remote",
         "tag": "geoip-cn",
         "format": "binary",
         "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
@@ -468,6 +508,20 @@
         "tag": "geoip-google",
         "format": "binary",
         "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs",
+        "update_interval": "8h"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-jp",
+        "format": "binary",
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-jp.srs",
+        "update_interval": "8h"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-kr",
+        "format": "binary",
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-kr.srs",
         "update_interval": "8h"
       },
       {
@@ -542,6 +596,13 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-category-games-!cn",
+        "format": "binary",
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-games-!cn.srs",
+        "update_interval": "8h"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-category-games@cn",
         "format": "binary",
         "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-games@cn.srs",
@@ -573,6 +634,13 @@
         "tag": "geosite-category-social-media-!cn",
         "format": "binary",
         "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-social-media-!cn.srs",
+        "update_interval": "8h"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cloudflare",
+        "format": "binary",
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cloudflare.srs",
         "update_interval": "8h"
       },
       {
@@ -832,10 +900,10 @@
       "mtu": 1500,
       "auto_route": true,
       "auto_redirect": false,
-      "endpoint_independent_nat": true,
-      "udp_timeout": "5m",
       "strict_route": true,
-      "stack": "system"
+      "stack": "mixed",
+      "endpoint_independent_nat": true,
+      "udp_timeout": "5m"
     }
   ],
   "outbounds": [
@@ -847,18 +915,16 @@
       "type": "selector",
       "tag": "🚩 Proxy",
       "outbounds": [
-        "🇭🇰 香港【自动】",
-        "🇯🇵 日本【自动】",
+        "🇭🇰 香港原生",
+        "🇯🇵 日本原生",
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
         "🇼🇸 台湾-HiNet",
         "🇯🇵 日本-SoftBank",
         "🇳🇱 荷兰-DCMA",
-        "🇭🇰 香港",
-        "🇯🇵 日本",
-        "🇸🇬 新加坡",
-        "🇺🇸 美国",
-        "🇩🇪 德国",
+        "🇸🇬 新加坡原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
       ]
@@ -895,31 +961,31 @@
       "tag": "↩️ Direct",
       "outbounds": [
         "direct",
-        "🇭🇰 香港【自动】",
-        "🇸🇬 新加坡【自动】",
-        "🇯🇵 日本【自动】"
+        "🇭🇰 香港",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本"
       ]
     },
     {
       "type": "selector",
       "tag": "🔀 BDGW",
       "outbounds": [
-        "🇭🇰 香港【自动】",
-        "🇸🇬 新加坡【自动】",
-        "🇯🇵 日本【自动】",
-        "🇺🇸 美国【自动】",
-        "🇩🇪 德国【自动】"
+        "🇭🇰 香港",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本",
+        "🇺🇸 美国",
+        "🇩🇪 德国"
       ]
     },
     {
       "type": "selector",
       "tag": "⬇️ Download",
       "outbounds": [
-        "🇭🇰 香港【自动】",
-        "🇸🇬 新加坡【自动】",
-        "🇯🇵 日本【自动】",
-        "🇺🇸 美国【自动】",
-        "🇩🇪 德国【自动】",
+        "🇭🇰 香港",
+        "🇸🇬 新加坡",
+        "🇯🇵 日本",
+        "🇺🇸 美国",
+        "🇩🇪 德国",
         "direct"
       ]
     },
@@ -965,6 +1031,23 @@
       "type": "selector",
       "tag": "🤖 AI",
       "outbounds": [
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇼🇸 台湾家宽",
+        "🇸🇬 新加坡家宽",
+        "🇯🇵 日本家宽",
+        "🇰🇷 韩国家宽",
+        "🇺🇸 美国家宽",
+        "🇨🇦 加拿大家宽",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🎮 Games",
+      "outbounds": [
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
         "🇼🇸 台湾-HiNet",
         "🇯🇵 日本-SoftBank",
         "🇼🇸 台湾家宽",
@@ -1199,7 +1282,32 @@
     },
     {
       "type": "selector",
-      "tag": "Google",
+      "tag": "Ecommerce & Finance",
+      "outbounds": [
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Media & Forums",
+      "outbounds": [
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇳🇱 荷兰-DCMA",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "☁️ Cloudflare",
       "outbounds": [
         "🇭🇰 香港原生",
         "🇼🇸 台湾原生",
@@ -1218,7 +1326,26 @@
     },
     {
       "type": "selector",
-      "tag": "Apple",
+      "tag": "🔍 Google",
+      "outbounds": [
+        "🇭🇰 香港原生",
+        "🇼🇸 台湾原生",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇳🇱 荷兰-DCMA",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🍎 Apple",
       "outbounds": [
         "🔀 BDGW",
         "🇭🇰 香港",
@@ -1237,7 +1364,7 @@
     },
     {
       "type": "selector",
-      "tag": "Microsoft",
+      "tag": "📊 Microsoft",
       "outbounds": [
         "🔀 BDGW",
         "🇭🇰 香港",
@@ -1256,20 +1383,55 @@
     },
     {
       "type": "selector",
-      "tag": "Ecommerce & Finance",
+      "tag": "🌏 IP Google",
       "outbounds": [
+        "🚩 Proxy",
+        "🇭🇰 香港原生",
+        "🇼🇸 台湾原生",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
         "🇼🇸 台湾-HiNet",
         "🇯🇵 日本-SoftBank",
+        "🇳🇱 荷兰-DCMA",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
       ]
     },
     {
       "type": "selector",
-      "tag": "Media & Forums",
+      "tag": "🌏 IP Cloudflare",
       "outbounds": [
+        "🚩 Proxy",
+        "🇭🇰 香港原生",
+        "🇼🇸 台湾原生",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
+        "🇭🇰 香港-HKT",
+        "🇭🇰 香港-HGC",
+        "🇼🇸 台湾-HiNet",
+        "🇯🇵 日本-SoftBank",
+        "🇳🇱 荷兰-DCMA",
+        "🇺🇳 全球原生",
+        "🇺🇳 全球家宽"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "Protocol UDP",
+      "outbounds": [
+        "🚩 Proxy",
+        "🇭🇰 香港原生",
+        "🇼🇸 台湾原生",
+        "🇸🇬 新加坡原生",
+        "🇯🇵 日本原生",
+        "🇺🇸 美国原生",
+        "🇩🇪 德国原生",
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
         "🇼🇸 台湾-HiNet",
