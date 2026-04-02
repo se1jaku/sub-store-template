@@ -431,6 +431,21 @@
       {
         "network": "tcp",
         "port": [
+          22
+        ],
+        "action": "route",
+        "outbound": "↩️ Direct"
+      },
+      {
+        "network": "udp",
+        "port": [
+          443
+        ],
+        "action": "reject"
+      },
+      {
+        "network": "tcp",
+        "port": [
           465,
           587,
           993,
@@ -465,21 +480,6 @@
         ],
         "action": "route",
         "outbound": "🇯🇵 日本"
-      },
-      {
-        "network": "tcp",
-        "port": [
-          22
-        ],
-        "action": "route",
-        "outbound": "↩️ Direct"
-      },
-      {
-        "network": "udp",
-        "port": [
-          443
-        ],
-        "action": "reject"
       }
     ],
     "final": "🏁 默认出口",

@@ -109,52 +109,52 @@ config.outbounds.map(i => {
 
   // NOTE: global original, following country code order
   if (['🇺🇳 全球原生', '🇺🇳 全球原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-([a-z]+-)?(orig|bage|akari)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-([a-z]+-)?(orig|bage|akari)(-|<|\[)/i))
   }
   if (['🇺🇸 美国原生', '🇺🇸 美国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|us)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇨🇦 加拿大原生', '🇨🇦 加拿大原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇨🇦\s+(加拿大|ca)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇨🇦\s+(加拿大|ca)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇷🇺 俄罗斯原生', '🇷🇺 俄罗斯原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|ru)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇳🇱 荷兰原生', '🇳🇱 荷兰原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|nl)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇫🇷 法国原生', '🇫🇷 法国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇫🇷\s+(法国|fr)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇫🇷\s+(法国|fr)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇬🇧 英国原生', '🇬🇧 英国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇬🇧\s+(英国|uk)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇬🇧\s+(英国|uk)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇩🇪 德国原生', '🇩🇪 德国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|de)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇦🇺 澳大利亚原生', '🇦🇺 澳大利亚原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇦🇺\s+(澳大利亚|au)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇦🇺\s+(澳大利亚|au)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇸🇬 新加坡原生', '🇸🇬 新加坡原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(orig|misaka|akari|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|sg)-([a-z]+-)?(orig|misaka|akari|bage)(-|<|\[)/i))
   }
   if (['🇸🇽 马来原生', '🇸🇽 马来原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(马来|my)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(马来|my)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇯🇵 日本原生', '🇯🇵 日本原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(orig|misaka|akari|bage|ddps|neburst)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|jp)-([a-z]+-)?(orig|misaka|akari|bage|ddps|neburst)(-|<|\[)/i))
   }
   if (['🇰🇷 韩国原生', '🇰🇷 韩国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|kr)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇭🇰 香港原生', '🇭🇰 香港原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(orig|misaka|bage|neburst)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|hk)-([a-z]+-)?(orig|misaka|bage|neburst)(-|<|\[)/i))
   }
   if (['🇲🇴 澳门原生', '🇲🇴 澳门原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇲🇴\s+(澳门|mo)-([a-z]+-)?(orig|misaka|bage)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇲🇴\s+(澳门|mo)-([a-z]+-)?(orig|misaka|bage)(-|<|\[)/i))
   }
   if (['🇼🇸 台湾原生', '🇼🇸 台湾原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-([a-z]+-)?(orig|misaka|akari|bage|simple)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇼🇸\s+(台湾|tw)-([a-z]+-)?(orig|misaka|akari|bage|simple)(-|<|\[)/i))
   }
 
   // NOTE: global home boardband, following country code order
