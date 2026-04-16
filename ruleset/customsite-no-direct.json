@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [
+                "rfchost.com"
+            ],
+            "domain_suffix": [
+                ".rfchost.com"
+            ],
+            "domain_regex": []
+        }
+    ]
+}

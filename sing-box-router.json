@@ -157,13 +157,23 @@
         "outbound": "🚩 Proxy"
       },
       {
-        "rule_set": [
-          "geosite-tld-cn",
-          "geosite-private",
-          "geosite-geolocation-cn",
-          "geosite-category-games@cn",
-          "geosite-category-game-accelerator-cn",
-          "customsite-direct"
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": [
+              "geosite-tld-cn",
+              "geosite-private",
+              "geosite-geolocation-cn",
+              "geosite-category-games@cn",
+              "geosite-category-game-accelerator-cn",
+              "customsite-direct"
+            ]
+          },
+          {
+            "rule_set": "customsite-no-direct",
+            "invert": true
+          }
         ],
         "action": "route",
         "outbound": "direct"
@@ -884,6 +894,13 @@
         "tag": "customsite-netflix",
         "format": "source",
         "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-netflix.json",
+        "update_interval": "8h"
+      },
+      {
+        "type": "remote",
+        "tag": "customsite-no-direct",
+        "format": "source",
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-no-direct.json",
         "update_interval": "8h"
       },
       {
