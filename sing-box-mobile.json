@@ -355,277 +355,323 @@
         "type": "remote",
         "tag": "geoip-cn",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geoip-google",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geoip-netflix",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-netflix.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-netflix.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geoip-telegram",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-apple",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-apple.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-apple.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-bahamut",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-bahamut.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-bahamut.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-catchplay",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-catchplay.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-catchplay.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-cryptocurrency",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-cryptocurrency.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-cryptocurrency.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-dev",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-dev.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-dev.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ecommerce",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ecommerce.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ecommerce.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-finance",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-finance.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-finance.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-forums",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-forums.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-forums.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-game-accelerator-cn",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-game-accelerator-cn.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-game-accelerator-cn.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-games@cn",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-games@cn.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-games@cn.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-media",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-media.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-media.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ntp",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ntp.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ntp.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-remote-control",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-remote-control.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-remote-control.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-category-social-media-!cn",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-social-media-!cn.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-social-media-!cn.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-disney",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-disney.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-disney.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-geolocation-!cn",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-geolocation-!cn.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-geolocation-!cn.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-geolocation-cn",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-geolocation-cn.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-geolocation-cn.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-google",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-hamivideo",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hamivideo.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hamivideo.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-hbo",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hbo.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hbo.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-imgur",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-imgur.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-imgur.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-kktv",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-kktv.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-kktv.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-line",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-line.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-line.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-litv",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-litv.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-litv.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-microsoft",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-netflix",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-netflix.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-netflix.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-primevideo",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-primevideo.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-primevideo.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-private",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-private.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-private.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-speedtest",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-speedtest.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-speedtest.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-telegram",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-tiktok",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-tld-cn",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tld-cn.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tld-cn.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-tvb",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tvb.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tvb.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-whatsapp",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-whatsapp.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-whatsapp.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "geosite-yahoo",
         "format": "binary",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-yahoo.srs"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-yahoo.srs",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "customsite-direct",
         "format": "source",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-direct.json"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-direct.json",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "customsite-geo-jp",
         "format": "source",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-geo-jp.json"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-geo-jp.json",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "customsite-geo-us",
         "format": "source",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-geo-us.json"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-geo-us.json",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "customsite-netflix",
         "format": "source",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-netflix.json"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-netflix.json",
+        "update_interval": "1d"
       },
       {
         "type": "remote",
         "tag": "customsite-shopping",
         "format": "source",
-        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-shopping.json"
+        "url": "https://hubproxy.cherrycloud.net/https://raw.githubusercontent.com/se1jaku/sub-store-template/refs/heads/main/ruleset/customsite-shopping.json",
+        "update_interval": "1d"
       }
     ]
   },
@@ -675,7 +721,7 @@
         "🇯🇵 日本【自动】",
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇳🇱 荷兰-DCMA",
         "🇭🇰 香港",
         "🇯🇵 日本",
@@ -692,7 +738,7 @@
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇳🇱 荷兰-DCMA",
         "🇭🇰 香港",
         "🇯🇵 日本",
@@ -738,8 +784,8 @@
       "type": "selector",
       "tag": "AI",
       "outbounds": [
-        "🇼🇸 台湾-HiNet",
-        "🇼🇸 台湾家宽",
+        "🇹🇼 台湾-HiNet",
+        "🇹🇼 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
         "🇺🇸 美国家宽",
@@ -772,13 +818,13 @@
       "type": "selector",
       "tag": "Tiktok",
       "outbounds": [
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇸🇬 新加坡原生",
         "🇯🇵 日本原生",
         "🇺🇸 美国原生",
         "🇩🇪 德国原生",
         "🇬🇧 英国原生",
-        "🇼🇸 台湾家宽",
+        "🇹🇼 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
         "🇺🇸 美国家宽",
@@ -791,13 +837,13 @@
       "type": "selector",
       "tag": "Spotify",
       "outbounds": [
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇸🇬 新加坡原生",
         "🇯🇵 日本原生",
         "🇺🇸 美国原生",
         "🇩🇪 德国原生",
         "🇬🇧 英国原生",
-        "🇼🇸 台湾家宽",
+        "🇹🇼 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
         "🇺🇸 美国家宽",
@@ -812,7 +858,7 @@
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇸🇬 新加坡原生",
         "🇯🇵 日本原生",
         "🇺🇸 美国原生",
@@ -820,7 +866,7 @@
         "🇬🇧 英国原生",
         "🇭🇰 香港家宽",
         "🇲🇴 澳门家宽",
-        "🇼🇸 台湾家宽",
+        "🇹🇼 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
         "🇺🇸 美国家宽",
@@ -835,7 +881,7 @@
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇸🇬 新加坡原生",
         "🇯🇵 日本原生",
         "🇺🇸 美国原生",
@@ -843,7 +889,7 @@
         "🇬🇧 英国原生",
         "🇭🇰 香港家宽",
         "🇲🇴 澳门家宽",
-        "🇼🇸 台湾家宽",
+        "🇹🇼 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
         "🇺🇸 美国家宽",
@@ -858,7 +904,7 @@
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇸🇬 新加坡原生",
         "🇯🇵 日本原生",
         "🇺🇸 美国原生",
@@ -866,7 +912,7 @@
         "🇬🇧 英国原生",
         "🇭🇰 香港家宽",
         "🇲🇴 澳门家宽",
-        "🇼🇸 台湾家宽",
+        "🇹🇼 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
         "🇺🇸 美国家宽",
@@ -881,7 +927,7 @@
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇸🇬 新加坡原生",
         "🇯🇵 日本原生",
         "🇺🇸 美国原生",
@@ -889,7 +935,7 @@
         "🇬🇧 英国原生",
         "🇭🇰 香港家宽",
         "🇲🇴 澳门家宽",
-        "🇼🇸 台湾家宽",
+        "🇹🇼 台湾家宽",
         "🇸🇬 新加坡家宽",
         "🇯🇵 日本家宽",
         "🇺🇸 美国家宽",
@@ -902,8 +948,8 @@
       "type": "selector",
       "tag": "Taiwan Media & Streaming",
       "outbounds": [
-        "🇼🇸 台湾-HiNet",
-        "🇼🇸 台湾家宽"
+        "🇹🇼 台湾-HiNet",
+        "🇹🇼 台湾家宽"
       ]
     },
     {
@@ -917,7 +963,7 @@
         "🇩🇪 德国原生",
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇳🇱 荷兰-DCMA",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
@@ -935,7 +981,7 @@
         "🇩🇪 德国",
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇳🇱 荷兰-DCMA",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
@@ -959,7 +1005,7 @@
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
       ]
@@ -970,7 +1016,7 @@
       "outbounds": [
         "🇭🇰 香港-HKT",
         "🇭🇰 香港-HGC",
-        "🇼🇸 台湾-HiNet",
+        "🇹🇼 台湾-HiNet",
         "🇳🇱 荷兰-DCMA",
         "🇺🇳 全球原生",
         "🇺🇳 全球家宽"
@@ -1006,7 +1052,7 @@
     },
     {
       "type": "urltest",
-      "tag": "🇼🇸 台湾-HiNet【自动】",
+      "tag": "🇹🇼 台湾-HiNet【自动】",
       "interval": "3m",
       "tolerance": 50,
       "url": "http://1.1.1.1/cdn-cgi/trace",
@@ -1015,7 +1061,7 @@
     },
     {
       "type": "selector",
-      "tag": "🇼🇸 台湾-HiNet",
+      "tag": "🇹🇼 台湾-HiNet",
       "outbounds": []
     },
     {
@@ -1132,7 +1178,7 @@
     },
     {
       "type": "urltest",
-      "tag": "🇼🇸 台湾原生【自动】",
+      "tag": "🇹🇼 台湾原生【自动】",
       "interval": "3m",
       "tolerance": 20,
       "url": "http://1.1.1.1/cdn-cgi/trace",
@@ -1141,7 +1187,7 @@
     },
     {
       "type": "selector",
-      "tag": "🇼🇸 台湾原生",
+      "tag": "🇹🇼 台湾原生",
       "outbounds": []
     },
     {
@@ -1254,7 +1300,7 @@
     },
     {
       "type": "selector",
-      "tag": "🇼🇸 台湾家宽",
+      "tag": "🇹🇼 台湾家宽",
       "outbounds": []
     },
     {

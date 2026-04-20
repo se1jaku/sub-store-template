@@ -55,7 +55,7 @@ function getTags(proxies, regex) {
 }
 
 config.outbounds.map(i => {
-  // special
+  // NOTE: special
   if (['🇭🇰 香港-HKT', '🇭🇰 香港-HKT【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|HK)-([A-Z]+-)?(HKT)(-|<)/i))
     specialOutbounds.push(i)
