@@ -3,8 +3,6 @@ let { type, name } = $arguments;
 let compatibleFlag = false;
 type = /^1$|COL|组合/i.test(type) ? 'collection' : 'subscription';
 
-const POTENTIAL_TRANSFER_TYPES = new Set(['vless', 'vmess', 'trojan']);
-const POTENTIAL_END_NODE_TYPES = new Set(['shadowsocks', 'socks', 'http']);
 const COMPATIBLE_OUTBOUND = {
   type: 'selector',
   tag: '🔄 COMPATIBLE',
@@ -12,46 +10,11 @@ const COMPATIBLE_OUTBOUND = {
 };
 
 const config = JSON.parse($files[0]);
-const artifacts = await produceArtifact({
+const proxies = await produceArtifact({
   name,
   type,
   platform: 'sing-box',
   produceType: 'internal',
-});
-
-const proxies = [];
-const transfers = {};
-
-// generate transfer map
-artifacts.forEach(p => {
-  if (POTENTIAL_TRANSFER_TYPES.has(p.type)) {
-    const key = p.tag
-      .replace(/\p{Extended_Pictographic}/gu, '')
-      .replace(/[\u{1F1E6}-\u{1F1FF}]{2}/gu, '')
-      .trim()
-    transfers[key] = p
-  }
-});
-
-// generate chaining proxies
-artifacts.forEach(p => {
-  const regex = /<\(([^()]+)\)$/;
-  let validated = true;
-
-  if (POTENTIAL_END_NODE_TYPES.has(p.type)) {
-    const match = p.tag.match(regex);
-    if (match) {
-      p.tag = p.tag.replace(regex, '<$1');
-      if (match[1] in transfers) {
-        p['detour'] = transfers[match[1]].tag;
-      } else {
-        validated = false;
-      }
-    }
-  }
-  if (validated) {
-    proxies.push(p);
-  }
 });
 
 // outbounds group
