@@ -57,23 +57,23 @@ function getTags(proxies, regex) {
 config.outbounds.map(i => {
   // NOTE: special
   if (['🇭🇰 香港-HKT', '🇭🇰 香港-HKT【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|HK)-([A-Z]+-)?(HKT)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|HK)-((?!AIO-)[A-Z]+-)?(HKT)(-|<)/i))
     specialOutbounds.push(i)
   }
   if (['🇭🇰 香港-HGC', '🇭🇰 香港-HGC【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|HK)-([A-Z]+-)?(HGC)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|HK)-((?!AIO-)[A-Z]+-)?(HGC)(-|<)/i))
     specialOutbounds.push(i)
   }
   if (['🇹🇼 台湾-HiNet', '🇹🇼 台湾-HiNet【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇹🇼\s+(台湾|TW)-([A-Z]+-)?(HINET)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇹🇼\s+(台湾|TW)-((?!AIO-)[A-Z]+-)?(HINET)(-|<)/i))
     specialOutbounds.push(i)
   }
   if (['🇯🇵 日本-SoftBank', '🇯🇵 日本-SoftBank【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|JP)-([A-Z]+-)?(SOFTBANK|SB)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|JP)-((?!AIO-)[A-Z]+-)?(SOFTBANK|SB)(-|<)/i))
     specialOutbounds.push(i)
   }
   if (['🇳🇱 荷兰-DCMA', '🇳🇱 荷兰-DCMA【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|NL)-([A-Z]+-)?(DCMA)(-|<)/i))
+    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|NL)-((?!AIO-)[A-Z]+-)?(DCMA)(-|<)/i))
     specialOutbounds.push(i)
   }
 
