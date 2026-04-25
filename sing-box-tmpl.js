@@ -35,15 +35,23 @@ artifacts.forEach(p => {
 
 // generate chaining proxies
 artifacts.forEach(p => {
+  const regex = /<\(([^()]+)\)$/;
+  let validated = true;
+
   if (POTENTIAL_END_NODE_TYPES.has(p.type)) {
-    const regex = /<\(([^()]+)\)$/;
     const match = p.tag.match(regex);
     if (match) {
       p.tag = p.tag.replace(regex, '<$1');
-      p.detour = match[1] in transfers ? transfers[match[1]].tag : null;
+      if (match[1] in transfers) {
+        p['detour'] = transfers[match[1]].tag;
+      } else {
+        validated = false;
+      }
     }
   }
-  proxies.push(p);
+  if (validated) {
+    proxies.push(p);
+  }
 });
 
 // outbounds group

@@ -24,16 +24,24 @@ function operator(proxies, targetPlatform, context) {
   // generate chaining proxies
   proxies.forEach(p => {
     const underlyingRegex = /<\(([^()]+)\)$/;
+    let validated = true;
+
     if (POTENTIAL_END_NODE_TYPES.has(p.type)) {
       const match = p.name.match(underlyingRegex);
       if (match) {
         // remove brackets
         p.name = p.name.replace(underlyingRegex, '<$1');
         // console.log(p.name);
-        p['underlying-proxy'] = match[1] in transferMap ? transferMap[match[1]].name : null;
+        if (match[1] in transferMap) {
+          p['underlying-proxy'] = transferMap[match[1]].name;
+        } else {
+          validated = false;
+        }
       }
     }
-    modifiedProxies.push(p);
+    if (validated) {
+      modifiedProxies.push(p);
+    }
   });
 
   return modifiedProxies;
