@@ -1469,7 +1469,7 @@
       "tag": "🇭🇰 香港-HKT【自动】",
       "interval": "3m",
       "tolerance": 20,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1483,7 +1483,7 @@
       "tag": "🇭🇰 香港-HGC【自动】",
       "interval": "3m",
       "tolerance": 20,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1497,7 +1497,7 @@
       "tag": "🇭🇰 香港-iCable【自动】",
       "interval": "3m",
       "tolerance": 20,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1511,7 +1511,7 @@
       "tag": "🇹🇼 台湾-HiNet【自动】",
       "interval": "3m",
       "tolerance": 20,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1525,7 +1525,7 @@
       "tag": "🇯🇵 日本-SoftBank【自动】",
       "interval": "3m",
       "tolerance": 30,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1539,7 +1539,7 @@
       "tag": "🇺🇸 美国-ATT【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1553,7 +1553,7 @@
       "tag": "🇳🇱 荷兰-DCMA【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1567,7 +1567,7 @@
       "tag": "🇭🇰 香港【自动】",
       "interval": "3m",
       "tolerance": 20,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1581,7 +1581,7 @@
       "tag": "🇸🇬 新加坡【自动】",
       "interval": "3m",
       "tolerance": 30,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1595,7 +1595,7 @@
       "tag": "🇯🇵 日本【自动】",
       "interval": "3m",
       "tolerance": 30,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1609,7 +1609,7 @@
       "tag": "🇺🇸 美国【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1623,7 +1623,7 @@
       "tag": "🇩🇪 德国【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1637,7 +1637,7 @@
       "tag": "🇺🇳 全球原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1651,7 +1651,7 @@
       "tag": "🇭🇰 香港原生【自动】",
       "interval": "3m",
       "tolerance": 20,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1665,7 +1665,7 @@
       "tag": "🇹🇼 台湾原生【自动】",
       "interval": "3m",
       "tolerance": 20,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1679,7 +1679,7 @@
       "tag": "🇸🇬 新加坡原生【自动】",
       "interval": "3m",
       "tolerance": 30,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1693,7 +1693,7 @@
       "tag": "🇯🇵 日本原生【自动】",
       "interval": "3m",
       "tolerance": 30,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1707,7 +1707,7 @@
       "tag": "🇦🇺 澳大利亚原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1721,7 +1721,7 @@
       "tag": "🇺🇸 美国原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1735,7 +1735,7 @@
       "tag": "🇩🇪 德国原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1749,7 +1749,7 @@
       "tag": "🇬🇧 英国原生【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1763,7 +1763,7 @@
       "tag": "🇺🇳 全球家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1777,7 +1777,7 @@
       "tag": "🇭🇰 香港家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1791,7 +1791,7 @@
       "tag": "🇲🇴 澳门家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1805,7 +1805,7 @@
       "tag": "🇹🇼 台湾家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1819,7 +1819,7 @@
       "tag": "🇸🇬 新加坡家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1833,7 +1833,7 @@
       "tag": "🇯🇵 日本家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1847,7 +1847,7 @@
       "tag": "🇰🇷 韩国家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1861,7 +1861,7 @@
       "tag": "🇷🇺 俄罗斯家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1875,7 +1875,7 @@
       "tag": "🇺🇸 美国家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
@@ -1889,7 +1889,7 @@
       "tag": "🇨🇦 加拿大家宽【自动】",
       "interval": "3m",
       "tolerance": 50,
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/generate_204",
       "interrupt_exist_connections": true,
       "outbounds": []
     },
