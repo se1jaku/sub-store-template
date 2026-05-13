@@ -117,7 +117,7 @@ config.outbounds.map(i => {
     i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(马来|MY)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
   }
   if (['🇯🇵 日本原生', '🇯🇵 日本原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|JP)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|AKARI|DDPS|GOMAMI|NEBURST)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|JP)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|AKARI|DDPS|GOMAMI|NEBURST|FXT)(-|<|\[)/i))
   }
   if (['🇰🇷 韩国原生', '🇰🇷 韩国原生【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|KR)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
