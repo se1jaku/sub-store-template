@@ -214,16 +214,16 @@ config.outbounds.forEach(outbound => {
 });
 
 // fill original with corresponding homeboard
-config.outbounds.forEach(outbound => {
-  if (outbound.tag.includes('原生')) {
-    const targetTag = outbound.tag.replace('原生', '家宽');
-    const matched = config.outbounds.find(item => item.tag === targetTag);
+// config.outbounds.forEach(outbound => {
+//   if (outbound.tag.includes('原生')) {
+//     const targetTag = outbound.tag.replace('原生', '家宽');
+//     const matched = config.outbounds.find(item => item.tag === targetTag);
 
-    if (matched) {
-      outbound.outbounds.push(matched.tag);
-    }
-  }
-});
+//     if (matched) {
+//       outbound.outbounds.push(matched.tag);
+//     }
+//   }
+// });
 
 // fill empty outbounds with compatible
 config.outbounds.forEach(outbound => {
