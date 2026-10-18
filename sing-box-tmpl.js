@@ -84,52 +84,52 @@ config.outbounds.map(i => {
 
   // NOTE: global original, following country code order
   if (['🇺🇳 全球原生', '🇺🇳 全球原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-([A-Z]+-)?(ORIG|BAGE|AKARI)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^[^\s]+\s(\w+)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|AKARI)(-|<|\[)/i))
   }
   if (['🇺🇸 美国原生', '🇺🇸 美国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|US)-([A-Z]+-)?(ORIG|MISAKA|BAGE)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇺🇸\s+(美国|US)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|RFC)(-|<)|(GOMAMI|DMIT)\[)/i))
   }
   if (['🇨🇦 加拿大原生', '🇨🇦 加拿大原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇨🇦\s+(加拿大|CA)-([A-Z]+-)?(ORIG|MISAKA|BAGE)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇨🇦\s+(加拿大|CA)-([A-Z]+-)?(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇷🇺 俄罗斯原生', '🇷🇺 俄罗斯原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|RU)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|RU)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇳🇱 荷兰原生', '🇳🇱 荷兰原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|NL)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|NL)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇫🇷 法国原生', '🇫🇷 法国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇫🇷\s+(法国|FR)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇫🇷\s+(法国|FR)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇬🇧 英国原生', '🇬🇧 英国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇬🇧\s+(英国|UK)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇬🇧\s+(英国|UK)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇩🇪 德国原生', '🇩🇪 德国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|DE)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|DE)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇦🇺 澳大利亚原生', '🇦🇺 澳大利亚原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇦🇺\s+(澳大利亚|AU)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇦🇺\s+(澳大利亚|AU)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇸🇬 新加坡原生', '🇸🇬 新加坡原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|SG)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|AKARI)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|SG)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|AKARI|RFC)(-|<)|(GOMAMI|NEBURST)\[)/i))
   }
   if (['🇸🇽 马来原生', '🇸🇽 马来原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(马来|MY)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(马来|MY)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇯🇵 日本原生', '🇯🇵 日本原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|JP)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|AKARI|DDPS|GOMAMI|NEBURST|FXT)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|JP)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|AKARI|RFC|DDPS|FXT)(-|<)|(GOMAMI|NEBURST)\[)/i))
   }
   if (['🇰🇷 韩国原生', '🇰🇷 韩国原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|KR)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|KR)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇭🇰 香港原生', '🇭🇰 香港原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|HK)-([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|AKARI|GOMAMI|NEBURST)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|HK)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|AKARI)(-|<)|(GOMAMI|NEBURST)\[)/i))
   }
   if (['🇲🇴 澳门原生', '🇲🇴 澳门原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇲🇴\s+(澳门|MO)-([A-Z]+-)?(ORIG|MISAKA|BAGE)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇲🇴\s+(澳门|MO)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇹🇼 台湾原生', '🇹🇼 台湾原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇹🇼\s+(台湾|TW)-([A-Z]+-)?(ORIG|MISAKA|BAGE|AKARI|SIMPLE)(-|<|\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇹🇼\s+(台湾|TW)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|AKARI|SIMPLE)(-|<)|(GOMAMI|NEBURST)\[)/i))
   }
 
   // NOTE: global home boardband, following country code order
