@@ -62,7 +62,7 @@ config.outbounds.map(i => {
     generalOutbounds.push(i)
   }
   if (['🇩🇪 德国', '🇩🇪 德国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|DE)-([A-Z]+-)?(VPS|MISAKA|ENOS|BWG|HH|BAGE)(-|\[[A-Za-z]+\])/i))
+    i.outbounds.push(...getTags(proxies, /^🇩🇪\s+(德国|DE)-([A-Z]+-)?(VPS|MISAKA|ENOS|BWG|HH|BAGE|SF)(-|\[[A-Za-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇳🇱 荷兰', '🇳🇱 荷兰【自动】'].includes(i.tag)) {
