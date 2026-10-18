@@ -70,19 +70,19 @@ config.outbounds.map(i => {
     generalOutbounds.push(i)
   }
   if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|SG)-([A-Z]+-)?(VPS|MISAKA|ENOS|DMIT|BWG|RFC|HH|SHARON|GOMAMI|NEBURST|FXT|YXVM|ISIF|CLAW)(-|\[[A-Za-z]+\])/i))
+    i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|SG)-([A-Z]+-)?(VPS|MISAKA|ENOS|DMIT|BWG|RFC|HH|SHARON|GOMAMI|NEBURST|FXT|YXVM|ISIF)(-|\[[A-Za-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇯🇵 日本', '🇯🇵 日本【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|JP)-([A-Z]+-)?(VPS|MISAKA|ENOS|DMIT|BWG|RFC|HH|SHARON|GOMAMI|NEBURST|FXT|YXVM|ISIF|CLAW)(-|\[[A-Za-z]+\])/i))
+    i.outbounds.push(...getTags(proxies, /^🇯🇵\s+(日本|JP)-([A-Z]+-)?(VPS|MISAKA|ENOS|DMIT|BWG|RFC|HH|SHARON|GOMAMI|NEBURST|FXT|YXVM|ISIF)(-|\[[A-Za-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇰🇷 韩国', '🇰🇷 韩国【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|KR)-([A-Z]+-)?(VPS|MISAKA|ENOS|DMIT|BWG|RFC|HH|SHARON|GOMAMI|NEBURST|FXT|YXVM|ISIF|CLAW)(-|\[[A-Za-z]+\])/i))
+    i.outbounds.push(...getTags(proxies, /^🇰🇷\s+(韩国|KR)-([A-Z]+-)?(VPS|MISAKA|ENOS|DMIT|BWG|RFC|HH|SHARON|GOMAMI|NEBURST|FXT|YXVM|ISIF)(-|\[[A-Za-z]+\])/i))
     generalOutbounds.push(i)
   }
   if (['🇭🇰 香港', '🇭🇰 香港【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|HK)-([A-Z]+-)?(VPS|MISAKA|ENOS|DMIT|BWG|RFC|HH|SHARON|GOMAMI|NEBURST|FXT|YXVM|ISIF|CLAW|JINX|CTC)(-|\[[A-Za-z]+\])/i))
+    i.outbounds.push(...getTags(proxies, /^🇭🇰\s+(香港|HK)-([A-Z]+-)?(VPS|MISAKA|ENOS|DMIT|BWG|RFC|HH|SHARON|GOMAMI|NEBURST|FXT|YXVM|ISIF|JINX|CTC)(-|\[[A-Za-z]+\])/i))
     generalOutbounds.push(i)
   }
 
@@ -100,7 +100,7 @@ config.outbounds.map(i => {
     i.outbounds.push(...getTags(proxies, /^🇷🇺\s+(俄罗斯|RU)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
   }
   if (['🇳🇱 荷兰原生', '🇳🇱 荷兰原生【自动】'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|NL)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
+    i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|NL)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM|QUAD)(-|<)|(XTOM)\[)/i))
   }
   if (['🇫🇷 法国原生', '🇫🇷 法国原生【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇫🇷\s+(法国|FR)-(([A-Z]+-)?(ORIG|MISAKA|BAGE|XTOM)(-|<)|(XTOM)\[)/i))
