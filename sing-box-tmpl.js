@@ -67,7 +67,7 @@ config.outbounds.map(i => {
   }
   if (['🇳🇱 荷兰', '🇳🇱 荷兰【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇳🇱\s+(荷兰|NL)-([A-Z]+-)?(VPS|MISAKA|ENOS|BWG|HH|QUAD)(-|\[[A-Za-z]+\])/i))
-    specialOutbounds.push(i)
+    generalOutbounds.push(i)
   }
   if (['🇸🇬 新加坡', '🇸🇬 新加坡【自动】'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^🇸🇬\s+(新加坡|SG)-([A-Z]+-)?(VPS|MISAKA|ENOS|DMIT|BWG|RFC|HH|SHARON|GOMAMI|NEBURST|FXT|YXVM|ISIF|CLAW)(-|\[[A-Za-z]+\])/i))
